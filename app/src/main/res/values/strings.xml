@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Android-Learning-Trace</string>
     <string name="basicUI_showActivity_tv">Basic UI Component</string>
-    <string name="basicUI_showActivity_btn">Show</string>
+    <string name="basicUI_showActivity_btn">Part 1</string>
     <string name="title_activity_basic_uicomponent">BasicUIComponentActivity</string>
     <string name="basicUI_showTextToast">Show Text Toast</string>
     <string name="basicUI_showImageToast">Show Image Toast</string>
@@ -9,4 +9,12 @@
     <string name="basicUI_text_toast">Toast message.</string>
     <string name="basicUI_text_image_toast">Show image toast message.</string>
     <string name="basicUI_editText">EditText</string>
+    <string name="basicUI_toast_area">Toast function area:</string>
+    <string name="basicUI_textview_area">TextView function area:</string>
+    <string name="basicUI_button_area">Button function area:</string>
+    <string name="basicUI_textbutton">Text Button</string>
+    <string name="basicUI_imageButton">Image button</string>
+    <string name="basicUI_tpButton">Transparent button</string>
+    <string name="basicUI_btn_selector">Button selector</string>
+    <string name="textview">TextView</string>
 </resources>

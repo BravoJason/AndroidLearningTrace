@@ -24,6 +24,7 @@ public class BasicUIComponentActivity extends AppCompatActivity {
 
         initToast();
         initTextView();
+        initButton();
     }
 
     /**
@@ -118,5 +119,18 @@ public class BasicUIComponentActivity extends AppCompatActivity {
 
     }
 
+    /**
+     *
+     */
+    private void initButton() {
+        Button btnTextButton = findViewById(R.id.btn_textButton);
+        btnTextButton.setOnClickListener((v -> Toast.makeText(this, "Text button.", Toast.LENGTH_SHORT).show()));
+
+        Button btnTransparentButton = findViewById(R.id.btn_tpButton);
+        btnTransparentButton.setOnClickListener((view) -> Toast.makeText(
+                this,
+                "Transparent button.", Toast.LENGTH_SHORT).show());
+
+    }
 
 }

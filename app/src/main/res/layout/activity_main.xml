@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".view.MainActivity">
 
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/basicUI_showActivity_tv">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:padding="@dimen/default_padding"
-            android:text="@string/basicUI_showActivity_tv">
+    </TextView>
 
-        </TextView>
-
-        <Button
-            android:id="@+id/btn_basicUI_show"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/default_padding"
-            android:text="@string/basicUI_showActivity_btn" />
-
-    </TableRow>
+    <Button
+        android:id="@+id/btn_basicUI_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basicUI_showActivity_btn" />
 
 
-</TableLayout>
+</LinearLayout>
