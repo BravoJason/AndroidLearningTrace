@@ -20,4 +20,13 @@
     <string name="basicUI_showActivity_p2_button">Part 2</string>
     <string name="imageview_function_area">ImageView function area:</string>
     <string name="imageview_test_picture">ImageView test picture.</string>
+    <string name="basicUI_checkbox_area">Checkbox function area:</string>
+    <string name="checkbox1">CheckBox1</string>
+    <string name="checkbox2">CheckBox2</string>
+    <string name="checkbox3">CheckBox3</string>
+    <string name="basicUI_show_ct_status">Show checkbox status.</string>
+    <string name="radio_function_area">Radio function area:</string>
+    <string name="radiobutton1">RadioButton1</string>
+    <string name="radiobutton2">RadioButton2</string>
+    <string name="radiobutton3">RadioButton3</string>
 </resources>
