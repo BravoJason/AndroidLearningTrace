@@ -29,6 +29,7 @@ android:
     #- extra-google-m2repository
     #- extra-android-m2repository
 
+
     # Specify at least one system image,
     # if you need to run emulator(s) during your tests
     #- sys-img-x86-android-27
@@ -47,5 +48,9 @@ before_script:
 script:
   - android list target
   - ./gradlew connectedAndroidTest
+
+before_install:
+  - echo y | android update sdk -a --no-ui --filter android-27
+  - echo y | android update sdk -a --no-ui --filter sys-img-armeabi-v7a-android-27
 
 
