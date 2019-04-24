@@ -11,15 +11,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/basicUI_showActivity_tv">
+        android:text="@string/basicUI_showActivity_tv"
+        android:textSize="24sp">
 
     </TextView>
 
     <Button
-        android:id="@+id/btn_basicUI_show"
+        android:id="@+id/btn_basicUI_show_p1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/basicUI_showActivity_btn" />
+        android:text="@string/basicUI_p1_showActivity_p1_btn" />
+
+    <Button
+        android:id="@+id/btn_basicUI_show_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basicUI_showActivity_p2_button" />
 
 
 </LinearLayout>

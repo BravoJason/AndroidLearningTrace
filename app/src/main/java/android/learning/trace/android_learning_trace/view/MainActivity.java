@@ -13,9 +13,6 @@ import com.orhanobut.logger.Logger;
 public class MainActivity extends AppCompatActivity {
 
 
-    private Button btnShowBasicUIActivity;
-    private Intent basicUIIntent;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +30,18 @@ public class MainActivity extends AppCompatActivity {
      * Function to initialize the UI member values.
      */
     private void init() {
-        //Init button view.
-        btnShowBasicUIActivity = findViewById(R.id.btn_basicUI_show);
+        //Init button views.
+        Button btnShowBasicUIP1Activity = findViewById(R.id.btn_basicUI_show_p1);
+        Button btnShowBasicUIP2Activity = findViewById(R.id.btn_basicUI_show_p2);
 
         //Init Basic UI activity intent.
-        basicUIIntent = new Intent(getApplicationContext(), BasicUIComponentActivity.class);
+        Intent basicUIP1Intent = new Intent(getApplicationContext(), BasicUIComponentP1Activity.class);
+        Intent basicUIP2Intent = new Intent(getApplicationContext(), BasicUIComponentP2Activity.class);
+
 
         //Set button onClick callback listener.
-        btnShowBasicUIActivity.setOnClickListener(v -> startActivity(basicUIIntent));
+        btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
+        btnShowBasicUIP2Activity.setOnClickListener(v -> startActivity(basicUIP2Intent));
 
     }
 }

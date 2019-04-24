@@ -12,11 +12,11 @@
         <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.BasicUIComponentActivity" />
+        <activity android:name=".view.BasicUIComponentP1Activity" />
+        <activity android:name=".view.BasicUIComponentP2Activity" />
     </application>
 
 </manifest>

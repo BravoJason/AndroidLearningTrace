@@ -14,13 +14,13 @@ import android.widget.Toast;
 
 import com.orhanobut.logger.Logger;
 
-public class BasicUIComponentActivity extends AppCompatActivity {
+public class BasicUIComponentP1Activity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_basic_uicomponent);
+        setContentView(R.layout.activity_basic_uicomponent_p1);
 
         initToast();
         initTextView();
