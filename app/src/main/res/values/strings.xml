@@ -8,4 +8,5 @@
     <string name="basicUI_showTextImageToast">Show Image And Text Toast</string>
     <string name="basicUI_text_toast">Toast message.</string>
     <string name="basicUI_text_image_toast">Show image toast message.</string>
+    <string name="basicUI_editText">EditText</string>
 </resources>

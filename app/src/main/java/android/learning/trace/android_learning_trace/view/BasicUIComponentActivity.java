@@ -4,10 +4,15 @@ import android.learning.trace.android_learning_trace.R;
 import android.learning.trace.android_learning_trace.utility.ColorResourceHelper;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import com.orhanobut.logger.Logger;
 
 public class BasicUIComponentActivity extends AppCompatActivity {
 
@@ -17,13 +22,14 @@ public class BasicUIComponentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_uicomponent);
 
-        init();
+        initToast();
+        initTextView();
     }
 
     /**
-     * Function to init the member values.
+     * Function to initToast the member values.
      */
-    private void init() {
+    private void initToast() {
 
         //Initialize the buttons.
         Button btnDisplayTextToast = findViewById(R.id.btn_basicUI_showTextToast);
@@ -33,8 +39,15 @@ public class BasicUIComponentActivity extends AppCompatActivity {
         //Add onClick callback functions to buttons.
         btnDisplayTextToast.setOnClickListener(v -> {
             //Show toast.
-            Toast.makeText(getApplicationContext(), getText(R.string.basicUI_text_toast), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getText(R.string.basicUI_text_toast),
+                    Toast.LENGTH_SHORT).show();
         });
+
+        /*
+        Note:
+              When the anonymous class only has one abstract function, we can use lambda expression
+              to replace it.
+         */
 
         //Add onClick callback function by using a Lambda function.
         btnDisplayImageToast.setOnClickListener((v) -> {
@@ -73,7 +86,35 @@ public class BasicUIComponentActivity extends AppCompatActivity {
             //Show toast view.
             toast.show();
         });
+    }
 
+    /**
+     * Function to initialize TextView widget.
+     */
+    private void initTextView() {
+
+        EditText etvEditTextView = findViewById(R.id.etv_basicUI_editText);
+
+        etvEditTextView.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                Logger.i("Before changed: " + "s: " + s + ", start: " + start +
+                        ", after: " + after + ", count: " + count);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                Logger.i("On changing: " + "s: " + s + ", start: " + start +
+                        ", before: " + before + ", count: " + count);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                Logger.i("After changed: " + "s: " + s);
+
+            }
+        });
 
     }
 
