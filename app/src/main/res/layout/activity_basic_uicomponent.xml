@@ -43,6 +43,7 @@
         android:drawableLeft="@drawable/ic_toast_image"
         android:ems="10"
         android:hint="@string/basicUI_editText"
+        android:drawableStart="@drawable/ic_toast_image"
         android:inputType="text" />
 
     <View
