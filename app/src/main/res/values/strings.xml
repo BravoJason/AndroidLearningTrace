@@ -29,4 +29,9 @@
     <string name="radiobutton1">RadioButton1</string>
     <string name="radiobutton2">RadioButton2</string>
     <string name="radiobutton3">RadioButton3</string>
+    <string name="togglebutton_function_area">ToggleButton function area:</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="Switch_text">Switch</string>
 </resources>
