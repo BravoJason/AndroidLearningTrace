@@ -4,35 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity">
-
+    tools:context=".view.BasicUIComponentP3Activity">
 
     <TextView
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/basicUI_showActivity_tv"
-        android:textSize="24sp">
+        android:text="@string/spinner_function_area" />
 
-    </TextView>
-
-    <Button
-        android:id="@+id/btn_basicUI_show_p1"
+    <Spinner
+        android:id="@+id/spinner_province"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/basicUI_p1_showActivity_p1_btn" />
+        android:overlapAnchor="false" />
 
-    <Button
-        android:id="@+id/btn_basicUI_show_p2"
+    <Spinner
+        android:id="@+id/spinner_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/basicUI_showActivity_p2_button" />
-
-    <Button
-        android:id="@+id/btn_basicUI_show_p3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/part_3" />
-
+        android:entries="@array/city"
+        android:overlapAnchor="false" />
 
 </LinearLayout>
