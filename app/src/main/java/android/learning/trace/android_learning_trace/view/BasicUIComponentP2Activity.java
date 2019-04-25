@@ -9,18 +9,18 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 public class BasicUIComponentP2Activity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
-    CheckBox checkBox1;
-    CheckBox checkBox2;
-    CheckBox checkBox3;
+    CheckBox checkBox1, checkBox2, checkBox3;
     Button btnShowCheckboxStatus;
-    RadioButton radioButton1;
-    RadioButton radioButton2;
-    RadioButton radioButton3;
+    RadioButton radioButton1, radioButton2, radioButton3;
     RadioGroup radioGroup;
+    ToggleButton toggleButton;
+    Switch switchButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class BasicUIComponentP2Activity extends AppCompatActivity implements Com
         initImageView();
         initCheckBox();
         initRadioButton();
+        initToggleButton();
     }
 
     private void initImageView() {
@@ -116,6 +117,40 @@ public class BasicUIComponentP2Activity extends AppCompatActivity implements Com
                         "radioButton1 is checked.",
                         Toast.LENGTH_SHORT)
                         .show());
+
+    }
+
+    private void initToggleButton() {
+
+        //Find button views.
+        toggleButton = findViewById(R.id.toggleButton);
+        switchButton = findViewById(R.id.switch1);
+
+        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                String strStatus;
+                if (isChecked) {
+                    strStatus = "Toggle button is checked.";
+                } else {
+                    strStatus = "Toggle button is unchecked.";
+                }
+
+                Toast.makeText(BasicUIComponentP2Activity.this, strStatus, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        switchButton.setOnCheckedChangeListener(((buttonView, isChecked) -> {
+            String strStatus;
+            if (isChecked) {
+                strStatus = "Switch button is on";
+            } else {
+                strStatus = "Switch button is off";
+            }
+
+            Toast.makeText(this, strStatus, Toast.LENGTH_SHORT).show();
+        }));
+
 
     }
 }
