@@ -11,3 +11,4 @@ This is a repository for logging the trace of learning the Android development.
 6. RadioGroup and RadioButton
 7. ToggleButton and SwitchButton.
 8. RatingBar
+9. Spinner
