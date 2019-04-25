@@ -9,6 +9,7 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RatingBar;
 import android.widget.Switch;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -21,6 +22,7 @@ public class BasicUIComponentP2Activity extends AppCompatActivity implements Com
     RadioGroup radioGroup;
     ToggleButton toggleButton;
     Switch switchButton;
+    RatingBar ratingBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class BasicUIComponentP2Activity extends AppCompatActivity implements Com
         initCheckBox();
         initRadioButton();
         initToggleButton();
+        initRatingBar();
     }
 
     private void initImageView() {
@@ -152,5 +155,15 @@ public class BasicUIComponentP2Activity extends AppCompatActivity implements Com
         }));
 
 
+    }
+
+    private void initRatingBar() {
+        ratingBar = findViewById(R.id.ratingBar);
+
+        ratingBar.setOnRatingBarChangeListener(((ratingBar1, rating, fromUser) -> {
+            if (fromUser) {
+                Toast.makeText(this, "rating = " + rating, Toast.LENGTH_SHORT).show();
+            }
+        }));
     }
 }

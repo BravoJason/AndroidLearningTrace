@@ -34,4 +34,5 @@
     <string name="off">Off</string>
     <string name="on">On</string>
     <string name="Switch_text">Switch</string>
+    <string name="ratingbar_function_area">RatingBar function area:</string>
 </resources>
