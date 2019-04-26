@@ -37,9 +37,18 @@
     <string name="ratingbar_function_area">RatingBar function area:</string>
     <string name="spinner_function_area">Spinner function area:</string>
     <string name="part_3">Part 3</string>
+    <string name="autocompletetextview_function_area">AutoCompleteTextView function area:</string>
+    <string name="email_provider">Email provider</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>
         <item>Windsor</item>
+    </array>
+
+    <array name="email_surfix">
+        <item>gmail</item>
+        <item>hotmail</item>
+        <item>microsoft</item>
+        <item>humail</item>
     </array>
 </resources>
