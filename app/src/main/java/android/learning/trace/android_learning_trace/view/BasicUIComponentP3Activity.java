@@ -4,17 +4,20 @@ import android.learning.trace.android_learning_trace.R;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Spinner;
 
 public class BasicUIComponentP3Activity extends AppCompatActivity {
 
     Spinner spinner_city, spinner_province;
+    AutoCompleteTextView autoCompleteTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_uicomponent_p3);
         initSpinner();
+        initAutoCompleteTextView();
     }
 
     private void initSpinner() {
@@ -39,6 +42,18 @@ public class BasicUIComponentP3Activity extends AppCompatActivity {
 
 
         spinner_province.setAdapter(provinceAdapter);
+    }
+
+    private void initAutoCompleteTextView() {
+        //Find AutoCompleteTextView.
+        autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
+
+        ArrayAdapter emailProvider = ArrayAdapter.createFromResource(
+                this,
+                R.array.email_surfix,
+                android.R.layout.simple_dropdown_item_1line
+        );
+        autoCompleteTextView.setAdapter(emailProvider);
 
     }
 }
