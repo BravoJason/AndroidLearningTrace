@@ -35,12 +35,14 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowBasicUIP1Activity = findViewById(R.id.btn_basicUI_show_p1);
         Button btnShowBasicUIP2Activity = findViewById(R.id.btn_basicUI_show_p2);
         Button btnShowBasicUIP3Activity = findViewById(R.id.btn_basicUI_show_p3);
+        Button btnShowBasicUIP4Activity = findViewById(R.id.btn_basicUI_show_p4);
 
 
         //Init Basic UI activity intent.
         Intent basicUIP1Intent = new Intent(getApplicationContext(), BasicUIComponentP1Activity.class);
         Intent basicUIP2Intent = new Intent(getApplicationContext(), BasicUIComponentP2Activity.class);
         Intent basicUIP3Intent = new Intent(this, BasicUIComponentP3Activity.class);
+        Intent basicUIP4Intent = new Intent(this, BasicUIComponentP4Activity.class);
 
 
         //Set button onClick callback listener.
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(basicUIP3Intent);
             }
         });
+
+        btnShowBasicUIP4Activity.setOnClickListener(v -> startActivity(basicUIP4Intent));
 
     }
 }
