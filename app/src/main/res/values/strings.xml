@@ -39,6 +39,9 @@
     <string name="part_3">Part 3</string>
     <string name="autocompletetextview_function_area">AutoCompleteTextView function area:</string>
     <string name="email_provider">Email provider</string>
+    <string name="progressbar_function_area">ProgressBar function area:</string>
+    <string name="show_progress_bar_info">Show progress bar info</string>
+    <string name="increase_progress_bar">Increase Progress Bar</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>
