@@ -46,5 +46,51 @@
         android:completionThreshold="1"
         android:hint="@string/email_provider" />
 
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/progressbar_function_area" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--
+        When android:indeterminate is true, the max and progress setting won't work.
+        SecondaryProgress is the light color progress bar.
+        Usually, we use this as the buffer indicator.
+    -->
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="10"
+        android:secondaryProgress="30" />
+
+    <Button
+        android:id="@+id/btn_BasicUI_showProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_progress_bar_info" />
+
+    <Button
+        android:id="@+id/btn_BasicUI_increaseProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/increase_progress_bar" />
+
 
 </LinearLayout>

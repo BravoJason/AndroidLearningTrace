@@ -13,3 +13,4 @@ This is a repository for logging the trace of learning the Android development.
 8. RatingBar
 9. Spinner
 10. AutoCompleteTextView
+11. ProgressBar

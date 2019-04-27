@@ -5,12 +5,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class BasicUIComponentP3Activity extends AppCompatActivity {
 
     Spinner spinner_city, spinner_province;
     AutoCompleteTextView autoCompleteTextView;
+    Button btnShowProgressBar, btnIncreaseProgressBar;
+    ProgressBar progressBar2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +24,7 @@ public class BasicUIComponentP3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_basic_uicomponent_p3);
         initSpinner();
         initAutoCompleteTextView();
+        initProgressBar();
     }
 
     private void initSpinner() {
@@ -56,4 +63,52 @@ public class BasicUIComponentP3Activity extends AppCompatActivity {
         autoCompleteTextView.setAdapter(emailProvider);
 
     }
+
+    private void initProgressBar() {
+        progressBar2 = findViewById(R.id.progressBar2);
+        btnShowProgressBar = findViewById(R.id.btn_BasicUI_showProgress);
+        btnIncreaseProgressBar = findViewById(R.id.btn_BasicUI_increaseProgress);
+        class ProgresBarInfo {
+            private int majorMax;
+            private int majorProgress;
+            private int secondaryProgress;
+            private ProgressBar progressBar;
+
+            private ProgresBarInfo(ProgressBar progressBar) {
+                this.progressBar = progressBar;
+                updateInfo();
+            }
+
+            private void updateInfo() {
+                if (progressBar != null) {
+                    majorMax = progressBar.getMax();
+                    majorProgress = progressBar.getProgress();
+                    secondaryProgress = progressBar.getSecondaryProgress();
+                }
+            }
+
+            @Override
+            public String toString() {
+                return "Max progress: " + majorMax + ", major progress: " + majorProgress
+                        + ", secondary progress:" + secondaryProgress;
+            }
+        }
+
+        btnShowProgressBar.setOnClickListener(v -> {
+            ProgresBarInfo progresBarInfo = new ProgresBarInfo(progressBar2);
+
+            Toast.makeText(getApplicationContext(), progresBarInfo.toString(), Toast.LENGTH_SHORT).show();
+        });
+
+        btnIncreaseProgressBar.setOnClickListener(v -> {
+            progressBar2.incrementProgressBy(10);
+            progressBar2.incrementSecondaryProgressBy(20);
+            ProgresBarInfo progresBarInfo = new ProgresBarInfo(progressBar2);
+            Toast.makeText(this, progresBarInfo.toString(), Toast.LENGTH_SHORT).show();
+        });
+
+
+    }
+
+
 }
