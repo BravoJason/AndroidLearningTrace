@@ -42,6 +42,14 @@
     <string name="progressbar_function_area">ProgressBar function area:</string>
     <string name="show_progress_bar_info">Show progress bar info</string>
     <string name="increase_progress_bar">Increase Progress Bar</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="alertdialog_function_area">AlertDialog function area:</string>
+    <string name="alertdialog">AlertDialog</string>
+    <string name="list_alertdialog">List AlertDialog</string>
+    <string name="multichoice_dialog">Multichoice dialog</string>
+    <string name="singlechoice_dialog">SingleChoice Dialog</string>
+    <string name="customized_dialog">Customized Dialog</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>
