@@ -92,5 +92,48 @@
         android:layout_height="wrap_content"
         android:text="@string/increase_progress_bar" />
 
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/alertdialog_function_area" />
+
+    <Button
+        android:id="@+id/btn_BasicUI_showAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alertdialog" />
+
+    <Button
+        android:id="@+id/btn_BasicUI_show_list_alertdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_alertdialog" />
+
+    <Button
+        android:id="@+id/btn_BasicUI_show_multichoice_alertdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/multichoice_dialog" />
+
+    <Button
+        android:id="@+id/btn_BasicUI_show_singlechoice_alertdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/singlechoice_dialog" />
+
+    <Button
+        android:id="@+id/btn_BasicUI_show_customized_alertdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/customized_dialog" />
+
 
 </LinearLayout>
