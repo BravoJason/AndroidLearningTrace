@@ -15,3 +15,4 @@ This is a repository for logging the trace of learning the Android development.
 10. AutoCompleteTextView
 11. ProgressBar
 12. AlertDialog
+13. TimePicker Dialog

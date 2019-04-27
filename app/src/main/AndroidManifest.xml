@@ -19,6 +19,7 @@
         <activity android:name=".view.BasicUIComponentP1Activity" />
         <activity android:name=".view.BasicUIComponentP2Activity" />
         <activity android:name=".view.BasicUIComponentP3Activity" />
+        <activity android:name=".view.BasicUIComponentP4Activity" />
     </application>
 
 </manifest>
