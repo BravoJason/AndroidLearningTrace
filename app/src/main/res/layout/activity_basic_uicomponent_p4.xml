@@ -36,17 +36,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="DatePicker function area:" />
+        android:text="@string/datepicker_function_area" />
 
     <TextView
         android:id="@+id/tv_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No date" />
+        android:text="@string/no_date" />
 
     <Button
         android:id="@+id/btn_p4_showDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show DatePicker" />
+        android:text="@string/show_datepicker" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TimePicker
+                android:id="@+id/p4_timepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <DatePicker
+                android:id="@+id/p4_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/p4_btn_savetd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save time and date" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

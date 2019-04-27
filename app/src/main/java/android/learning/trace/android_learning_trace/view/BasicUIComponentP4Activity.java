@@ -4,11 +4,15 @@ package android.learning.trace.android_learning_trace.view;
 import android.learning.trace.android_learning_trace.R;
 import android.learning.trace.android_learning_trace.presenter.IDateSetter;
 import android.learning.trace.android_learning_trace.presenter.ITimeSetter;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.TimePicker;
+import android.widget.Toast;
 
 public class BasicUIComponentP4Activity extends AppCompatActivity implements ITimeSetter, IDateSetter {
 
@@ -20,6 +24,7 @@ public class BasicUIComponentP4Activity extends AppCompatActivity implements ITi
         setContentView(R.layout.activity_basic_uicomponent_p4);
         initTimePicker();
         initDatePicker();
+        initTimeDatePicker();
     }
 
     private void initTimePicker() {
@@ -53,5 +58,41 @@ public class BasicUIComponentP4Activity extends AppCompatActivity implements ITi
     public void setDateValue(int y, int m, int d) {
 
         tvDate.setText(y + "-" + m + "-" + d);
+    }
+
+    public void initTimeDatePicker() {
+        TimePicker timePicker = findViewById(R.id.p4_timepicker);
+        DatePicker datePicker = findViewById(R.id.p4_datepicker);
+        Button btnSaveTimeAndDate = findViewById(R.id.p4_btn_savetd);
+
+        btnSaveTimeAndDate.setOnClickListener(v -> {
+            int nYear, nMonth, nDay, nHour, nMinute;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                nYear = datePicker.getYear();
+                nMonth = datePicker.getMonth() + 1;
+                nDay = datePicker.getDayOfMonth();
+                nHour = timePicker.getHour();
+                nMinute = timePicker.getMinute();
+            } else {
+                nYear = datePicker.getYear();
+                nMonth = datePicker.getMonth() + 1;
+                nDay = datePicker.getDayOfMonth();
+                nHour = timePicker.getCurrentHour();
+                nMinute = timePicker.getCurrentMinute();
+            }
+
+            Toast.makeText(this,
+                    nYear +
+                            "-" +
+                            nMonth +
+                            "-" +
+                            nDay +
+                            " " +
+                            nHour +
+                            ":" +
+                            nMinute,
+                    Toast.LENGTH_SHORT).show();
+
+        });
     }
 }

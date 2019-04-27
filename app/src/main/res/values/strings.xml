@@ -54,6 +54,9 @@
     <string name="time_picker_function_area">Time picker function area:</string>
     <string name="time">time:</string>
     <string name="show_timepicker">Show Timepicker</string>
+    <string name="show_datepicker">Show DatePicker</string>
+    <string name="no_date">No date</string>
+    <string name="datepicker_function_area">DatePicker function area:</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>
