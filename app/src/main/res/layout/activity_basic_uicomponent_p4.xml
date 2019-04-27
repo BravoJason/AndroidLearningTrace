@@ -24,4 +24,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/show_timepicker" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DatePicker function area:" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No date" />
+
+    <Button
+        android:id="@+id/btn_p4_showDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show DatePicker" />
 </LinearLayout>
