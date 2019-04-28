@@ -57,6 +57,10 @@
     <string name="show_datepicker">Show DatePicker</string>
     <string name="no_date">No date</string>
     <string name="datepicker_function_area">DatePicker function area:</string>
+    <string name="part_5">Part 5</string>
+    <string name="advanced_ui_component">Advanced UI Component</string>
+    <string name="gridview_function_area">GridView Function area</string>
+    <string name="gridview_function_area_2">GridView function area 2:</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>
