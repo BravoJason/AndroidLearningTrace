@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Part7Activity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/listview_function_area1" />
+
+    <ListView
+        android:id="@+id/lv_p7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/holo_purple"
+        android:dividerHeight="30dp"
+        android:drawSelectorOnTop="false"
+        android:entries="@array/name"
+        android:fadingEdge="vertical"
+        android:listSelector="@android:color/holo_blue_bright"
+        android:scrollbars="vertical|horizontal" />
+</LinearLayout>

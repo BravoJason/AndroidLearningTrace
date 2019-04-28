@@ -2,7 +2,6 @@
     <string name="app_name">Android-Learning-Trace</string>
     <string name="basicUI_showActivity_tv">Basic UI Component</string>
     <string name="basicUI_p1_showActivity_p1_btn">Part 1</string>
-    <string name="title_activity_basic_uicomponent">BasicUIComponentActivity</string>
     <string name="basicUI_showTextToast">Show Text Toast</string>
     <string name="basicUI_showImageToast">Show Image Toast</string>
     <string name="basicUI_showTextImageToast">Show Image And Text Toast</string>
@@ -57,10 +56,15 @@
     <string name="show_datepicker">Show DatePicker</string>
     <string name="no_date">No date</string>
     <string name="datepicker_function_area">DatePicker function area:</string>
-    <string name="part_5">Part 5</string>
+    <string name="part_5">Part 5 GridView</string>
     <string name="advanced_ui_component">Advanced UI Component</string>
     <string name="gridview_function_area">GridView Function area</string>
     <string name="gridview_function_area_2">GridView function area 2:</string>
+    <string name="part_6">Part 6 GridView With Text</string>
+    <string name="part_7">Part 7 ListView</string>
+    <string name="listview_function_area1">ListView function area:</string>
+    <string name="part_8_listactivity">Part 8 ListActivity</string>
+    <string name="part_9_selected_listview">Part 9 Selected ListView</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>
@@ -72,5 +76,39 @@
         <item>hotmail</item>
         <item>microsoft</item>
         <item>humail</item>
+    </array>
+
+    <array name="name">
+        <item>Jason</item>
+        <item>Tom</item>
+        <item>Jack</item>
+        <item>Bob</item>
+        <item>Ken</item>
+        <item>Peter</item>
+        <item>Jason</item>
+        <item>Tom</item>
+        <item>Jack</item>
+        <item>Bob</item>
+        <item>Ken</item>
+        <item>Peter</item>
+        <item>Jason</item>
+        <item>Tom</item>
+        <item>Jack</item>
+        <item>Bob</item>
+        <item>Ken</item>
+        <item>Peter</item>
+        <item>Jason</item>
+        <item>Tom</item>
+        <item>Jack</item>
+        <item>Bob</item>
+        <item>Ken</item>
+        <item>Peter</item>
+        <item>Jason</item>
+        <item>Tom</item>
+        <item>Jack</item>
+        <item>Bob</item>
+        <item>Ken</item>
+        <item>Peter</item>
+
     </array>
 </resources>

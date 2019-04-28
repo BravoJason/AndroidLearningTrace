@@ -65,6 +65,24 @@
         android:id="@+id/btn_main_showPart6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Part 6" />
+        android:text="@string/part_6" />
+
+    <Button
+        android:id="@+id/btn_main_showPart7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/part_7" />
+
+    <Button
+        android:id="@+id/btn_main_showPart8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/part_8_listactivity" />
+
+    <Button
+        android:id="@+id/btn_main_showPart9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/part_9_selected_listview" />
 
 </LinearLayout>
