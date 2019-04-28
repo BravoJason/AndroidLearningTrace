@@ -63,6 +63,8 @@
     <string name="part_6">Part 6 GridView With Text</string>
     <string name="part_7">Part 7 ListView</string>
     <string name="listview_function_area1">ListView function area:</string>
+    <string name="part_8_listactivity">Part 8 ListActivity</string>
+    <string name="part_9_selected_listview">Part 9 Selected ListView</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>

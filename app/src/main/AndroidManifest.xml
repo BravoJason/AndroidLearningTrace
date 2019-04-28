@@ -23,7 +23,8 @@
         <activity android:name=".view.Part5Activity" />
         <activity android:name=".view.Part6Activity" />
         <activity android:name=".view.Part7Activity" />
-        <activity android:name=".view.Part8Activity"></activity>
+        <activity android:name=".view.Part8Activity" />
+        <activity android:name=".view.Part9Activity" />
     </application>
 
 </manifest>

@@ -77,6 +77,12 @@
         android:id="@+id/btn_main_showPart8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Part 8 ListActivity" />
+        android:text="@string/part_8_listactivity" />
+
+    <Button
+        android:id="@+id/btn_main_showPart9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/part_9_selected_listview" />
 
 </LinearLayout>
