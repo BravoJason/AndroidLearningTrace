@@ -2,7 +2,6 @@
     <string name="app_name">Android-Learning-Trace</string>
     <string name="basicUI_showActivity_tv">Basic UI Component</string>
     <string name="basicUI_p1_showActivity_p1_btn">Part 1</string>
-    <string name="title_activity_basic_uicomponent">BasicUIComponentActivity</string>
     <string name="basicUI_showTextToast">Show Text Toast</string>
     <string name="basicUI_showImageToast">Show Image Toast</string>
     <string name="basicUI_showTextImageToast">Show Image And Text Toast</string>

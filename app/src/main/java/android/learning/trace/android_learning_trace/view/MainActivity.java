@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.learning.trace.android_learning_trace.R;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 
 import com.orhanobut.logger.AndroidLogAdapter;
@@ -39,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart5 = findViewById(R.id.btn_main_showPart5);
         Button btnShowPart6 = findViewById(R.id.btn_main_showPart6);
         Button btnShowPart7 = findViewById(R.id.btn_main_showPart7);
+        Button btnShowPart8 = findViewById(R.id.btn_main_showPart8);
 
 
         //Init Basic UI activity intent.
@@ -49,25 +49,18 @@ public class MainActivity extends AppCompatActivity {
         Intent p5Intent = new Intent(this, Part5Activity.class);
         Intent p6Intent = new Intent(this, Part6Activity.class);
         Intent p7Intent = new Intent(this, Part7Activity.class);
+        Intent p8Intent = new Intent(this, Part8Activity.class);
 
 
         //Set button onClick callback listener.
         btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
         btnShowBasicUIP2Activity.setOnClickListener(v -> startActivity(basicUIP2Intent));
-        btnShowBasicUIP3Activity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(basicUIP3Intent);
-            }
-        });
-
+        btnShowBasicUIP3Activity.setOnClickListener(v -> startActivity(basicUIP3Intent));
         btnShowBasicUIP4Activity.setOnClickListener(v -> startActivity(basicUIP4Intent));
-
         btnShowPart5.setOnClickListener(v -> startActivity(p5Intent));
-
         btnShowPart6.setOnClickListener(v -> startActivity(p6Intent));
-
         btnShowPart7.setOnClickListener(v -> startActivity(p7Intent));
+        btnShowPart8.setOnClickListener(v -> startActivity(p8Intent));
 
     }
 }

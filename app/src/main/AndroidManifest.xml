@@ -22,7 +22,8 @@
         <activity android:name=".view.BasicUIComponentP4Activity" />
         <activity android:name=".view.Part5Activity" />
         <activity android:name=".view.Part6Activity" />
-        <activity android:name=".view.Part7Activity"></activity>
+        <activity android:name=".view.Part7Activity" />
+        <activity android:name=".view.Part8Activity"></activity>
     </application>
 
 </manifest>
