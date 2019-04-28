@@ -40,5 +40,31 @@
         android:layout_height="wrap_content"
         android:text="@string/part_4" />
 
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/advanced_ui_component"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_main_showPart5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/part_5" />
+
+    <Button
+        android:id="@+id/btn_main_showPart6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Part 6" />
 
 </LinearLayout>
