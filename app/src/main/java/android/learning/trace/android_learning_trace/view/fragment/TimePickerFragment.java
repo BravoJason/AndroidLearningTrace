@@ -1,4 +1,4 @@
-package android.learning.trace.android_learning_trace.view;
+package android.learning.trace.android_learning_trace.view.fragment;
 
 import android.app.Dialog;
 import android.app.TimePickerDialog;

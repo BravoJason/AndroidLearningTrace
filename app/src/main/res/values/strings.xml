@@ -67,6 +67,10 @@
     <string name="part_9_selected_listview">Part 9 Selected ListView</string>
     <string name="part_10_imagetext_listview">Part 10 ImageText ListView</string>
     <string name="part_11_simpleadapter_listview">Part 11 SimpleAdapter ListView</string>
+    <string name="part_12_multipages_listview">Part 12 Multipages Listview</string>
+    <string name="title">title</string>
+    <string name="content">content</string>
+    <string name="loading">Loading</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>

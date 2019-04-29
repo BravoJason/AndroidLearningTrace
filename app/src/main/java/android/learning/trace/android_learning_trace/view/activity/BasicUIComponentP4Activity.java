@@ -1,9 +1,11 @@
-package android.learning.trace.android_learning_trace.view;
+package android.learning.trace.android_learning_trace.view.activity;
 
 
 import android.learning.trace.android_learning_trace.R;
 import android.learning.trace.android_learning_trace.presenter.IDateSetter;
 import android.learning.trace.android_learning_trace.presenter.ITimeSetter;
+import android.learning.trace.android_learning_trace.view.fragment.DatePickerFragment;
+import android.learning.trace.android_learning_trace.view.fragment.TimePickerFragment;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;

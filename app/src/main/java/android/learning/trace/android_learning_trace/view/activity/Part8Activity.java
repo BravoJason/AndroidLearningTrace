@@ -1,4 +1,4 @@
-package android.learning.trace.android_learning_trace.view;
+package android.learning.trace.android_learning_trace.view.activity;
 
 import android.app.ListActivity;
 import android.learning.trace.android_learning_trace.R;

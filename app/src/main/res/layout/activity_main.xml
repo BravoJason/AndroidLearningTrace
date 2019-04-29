@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity">
+    tools:context=".view.activity.MainActivity">
 
 
     <TextView
@@ -105,6 +105,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/part_11_simpleadapter_listview" />
+
+            <Button
+                android:id="@+id/btn_main_showPart12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/part_12_multipages_listview" />
         </LinearLayout>
 
 

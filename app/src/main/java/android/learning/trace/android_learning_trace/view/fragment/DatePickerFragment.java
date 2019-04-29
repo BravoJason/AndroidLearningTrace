@@ -1,4 +1,4 @@
-package android.learning.trace.android_learning_trace.view;
+package android.learning.trace.android_learning_trace.view.fragment;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -10,6 +10,7 @@ import android.support.v4.app.DialogFragment;
 import android.widget.DatePicker;
 
 import java.util.Calendar;
+import java.util.Objects;
 
 public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
 
@@ -25,9 +26,7 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
         m = c.get(Calendar.MONTH);
         d = c.get(Calendar.DAY_OF_MONTH);
 
-        DatePickerDialog dialog = new DatePickerDialog(getActivity(), this, y, m, d);
-
-        return dialog;
+        return new DatePickerDialog(Objects.requireNonNull(getActivity()), this, y, m, d);
     }
 
     @Override
