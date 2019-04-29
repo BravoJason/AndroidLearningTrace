@@ -65,6 +65,8 @@
     <string name="listview_function_area1">ListView function area:</string>
     <string name="part_8_listactivity">Part 8 ListActivity</string>
     <string name="part_9_selected_listview">Part 9 Selected ListView</string>
+    <string name="part_10_imagetext_listview">Part 10 ImageText ListView</string>
+    <string name="part_11_simpleadapter_listview">Part 11 SimpleAdapter ListView</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>

@@ -21,3 +21,4 @@ This is a repository for logging the trace of learning the Android development.
 16. GridView
 17. ListActivity and ListView(single and multi choice).
 18. ListView(SimpleAdapter)
+18. ListView(Customized Adapter, ConvertView, ViewHolder)
