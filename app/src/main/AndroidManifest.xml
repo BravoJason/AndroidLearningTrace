@@ -9,24 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.MainActivity">
+        <activity android:name=".view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.BasicUIComponentP1Activity" />
-        <activity android:name=".view.BasicUIComponentP2Activity" />
-        <activity android:name=".view.BasicUIComponentP3Activity" />
-        <activity android:name=".view.BasicUIComponentP4Activity" />
-        <activity android:name=".view.Part5Activity" />
-        <activity android:name=".view.Part6Activity" />
-        <activity android:name=".view.Part7Activity" />
-        <activity android:name=".view.Part8Activity" />
-        <activity android:name=".view.Part9Activity" />
-        <activity android:name=".view.Part10Activity" />
-        <activity android:name=".view.Part11Activity"></activity>
+        <activity android:name=".view.activity.BasicUIComponentP1Activity" />
+        <activity android:name=".view.activity.BasicUIComponentP2Activity" />
+        <activity android:name=".view.activity.BasicUIComponentP3Activity" />
+        <activity android:name=".view.activity.BasicUIComponentP4Activity" />
+        <activity android:name=".view.activity.Part5Activity" />
+        <activity android:name=".view.activity.Part6Activity" />
+        <activity android:name=".view.activity.Part7Activity" />
+        <activity android:name=".view.activity.Part8Activity" />
+        <activity android:name=".view.activity.Part9Activity" />
+        <activity android:name=".view.activity.Part10Activity" />
+        <activity android:name=".view.activity.Part11Activity" />
+        <activity android:name=".view.activity.Part12Activity" />
     </application>
 
 </manifest>

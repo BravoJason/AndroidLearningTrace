@@ -1,4 +1,4 @@
-package android.learning.trace.android_learning_trace.view;
+package android.learning.trace.android_learning_trace.view.activity;
 
 import android.content.Context;
 import android.learning.trace.android_learning_trace.R;
@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -29,12 +28,9 @@ public class Part6Activity extends AppCompatActivity {
         GridView gridView = findViewById(R.id.gv_p6);
         GridViewAdapter gridViewAdapter = new GridViewAdapter(this);
         gridView.setAdapter(gridViewAdapter);
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView textView = view.findViewById(R.id.tv_p6_gv);
-                Toast.makeText(Part6Activity.this, textView.getText(), Toast.LENGTH_SHORT).show();
-            }
+        gridView.setOnItemClickListener((parent, view, position, id) -> {
+            TextView textView = view.findViewById(R.id.tv_p6_gv);
+            Toast.makeText(Part6Activity.this, textView.getText(), Toast.LENGTH_SHORT).show();
         });
 
     }

@@ -1,6 +1,5 @@
-package android.learning.trace.android_learning_trace.view;
+package android.learning.trace.android_learning_trace.view.activity;
 
-import android.content.DialogInterface;
 import android.learning.trace.android_learning_trace.R;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -131,12 +130,7 @@ public class BasicUIComponentP3Activity extends AppCompatActivity {
             builder.setTitle("Title");
             builder.setMessage("This is the message.");
             builder.setIcon(R.drawable.ic_launcher_background);
-            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Toast.makeText(BasicUIComponentP3Activity.this, "Yes button is clicked.", Toast.LENGTH_SHORT).show();
-                }
-            });
+            builder.setPositiveButton("Yes", (dialog, which) -> Toast.makeText(BasicUIComponentP3Activity.this, "Yes button is clicked.", Toast.LENGTH_SHORT).show());
 
             builder.setNegativeButton("No", (dialog, which) -> {
                 Toast.makeText(this, "No button is clicked.", Toast.LENGTH_SHORT).show();
@@ -181,12 +175,9 @@ public class BasicUIComponentP3Activity extends AppCompatActivity {
             });
 
             builder.setIcon(R.drawable.ic_launcher_background);
-            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Toast.makeText(BasicUIComponentP3Activity.this, results.toString(), Toast.LENGTH_SHORT).show();
-                    dialog.dismiss();
-                }
+            builder.setPositiveButton("Yes", (dialog, which) -> {
+                Toast.makeText(BasicUIComponentP3Activity.this, results.toString(), Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
             });
 
             builder.setNegativeButton("No", (dialog, which) -> {

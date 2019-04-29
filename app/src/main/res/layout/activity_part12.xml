@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.Part10Activity">
+    tools:context=".view.activity.Part12Activity">
 
     <ListView
-        android:id="@+id/lv_p10"
+        android:id="@+id/lv_p12"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

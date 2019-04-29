@@ -1,5 +1,5 @@
 
-package android.learning.trace.android_learning_trace.view;
+package android.learning.trace.android_learning_trace.view.activity;
 
 import android.content.Intent;
 import android.learning.trace.android_learning_trace.R;
@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart8 = findViewById(R.id.btn_main_showPart8);
         Button btnShowPart9 = findViewById(R.id.btn_main_showPart9);
         Button btnShowPart10 = findViewById(R.id.btn_main_showPart10);
+        Button btnShowPart11 = findViewById(R.id.btn_main_showPart11);
+        Button btnShowPart12 = findViewById(R.id.btn_main_showPart12);
 
 
         //Init Basic UI activity intent.
@@ -54,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         Intent p8Intent = new Intent(this, Part8Activity.class);
         Intent p9Intent = new Intent(this, Part9Activity.class);
         Intent p10Intent = new Intent(this, Part10Activity.class);
+        Intent p11Intent = new Intent(this, Part11Activity.class);
+        Intent p12Intent = new Intent(this, Part12Activity.class);
 
 
         //Set button onClick callback listener.
@@ -67,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
         btnShowPart8.setOnClickListener(v -> startActivity(p8Intent));
         btnShowPart9.setOnClickListener(v -> startActivity(p9Intent));
         btnShowPart10.setOnClickListener(v -> startActivity(p10Intent));
+        btnShowPart11.setOnClickListener(v -> startActivity(p11Intent));
+        btnShowPart12.setOnClickListener(v -> startActivity(p12Intent));
 
     }
 }
