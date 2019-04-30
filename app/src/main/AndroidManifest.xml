@@ -29,7 +29,8 @@
         <activity android:name=".view.activity.Part11Activity" />
         <activity android:name=".view.activity.Part12Activity" />
         <activity android:name=".view.activity.Part13Activity" />
-        <activity android:name=".view.activity.Part14Activity"></activity>
+        <activity android:name=".view.activity.Part14Activity" />
+        <activity android:name=".view.activity.Part15Activity"></activity>
     </application>
 
 </manifest>
