@@ -122,6 +122,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/part_14_imageswitcher" />
+
+            <Button
+                android:id="@+id/btn_main_showPart15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/part_15_viewflipper" />
         </LinearLayout>
 
 

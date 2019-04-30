@@ -74,6 +74,7 @@
     <string name="part_13_expandablelistview">Part 13 ExpandableListView</string>
     <string name="group_icon">group icon</string>
     <string name="part_14_imageswitcher">Part 14 ImageSwitcher</string>
+    <string name="part_15_viewflipper">Part 15 ViewFlipper</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>
