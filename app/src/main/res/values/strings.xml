@@ -73,6 +73,7 @@
     <string name="loading">Loading</string>
     <string name="part_13_expandablelistview">Part 13 ExpandableListView</string>
     <string name="group_icon">group icon</string>
+    <string name="part_14_imageswitcher">Part 14 ImageSwitcher</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>

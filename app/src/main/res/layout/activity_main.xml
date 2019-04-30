@@ -116,6 +116,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/part_13_expandablelistview" />
+
+            <Button
+                android:id="@+id/btn_main_showPart14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/part_14_imageswitcher" />
         </LinearLayout>
 
 
