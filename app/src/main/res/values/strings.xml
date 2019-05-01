@@ -75,6 +75,7 @@
     <string name="group_icon">group icon</string>
     <string name="part_14_imageswitcher">Part 14 ImageSwitcher</string>
     <string name="part_15_viewflipper">Part 15 ViewFlipper</string>
+    <string name="part_16_menus">Part 16 Menus</string>
     <array name="city">
         <item>Hamilton</item>
         <item>Toronto</item>
@@ -121,4 +122,9 @@
         <item>Peter</item>
 
     </array>
+    <string name="title_activity_part16">MenuActivity</string>
+    <string name="game">Game</string>
+    <string name="video">Video</string>
+    <string name="youtube">Youtube</string>
+    <string name="exit">Exit</string>
 </resources>
