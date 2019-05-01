@@ -6,23 +6,69 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ContextMenu;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Part16Activity extends AppCompatActivity {
 
     private TextView textView;
+    private Button btn_setSize;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part16);
+        init();
 
+
+    }
+
+    private void init() {
         textView = findViewById(R.id.tv_part16_setBGColor);
+        btn_setSize = findViewById(R.id.btn_part16_setSize);
         //Register the context menu.
         registerForContextMenu(textView);
+
+        btn_setSize.setOnClickListener(v -> {
+            //Inflate the popup menu.
+            PopupMenu popupMenu = new PopupMenu(this, btn_setSize);
+            MenuInflater inflater = popupMenu.getMenuInflater();
+            inflater.inflate(R.menu.menu_part16_popup, popupMenu.getMenu());
+            //Set the popup menu items click listener.
+            popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    int id = item.getItemId();
+                    switch (id) {
+                        case R.id.item_popup_p16_s:
+                            Toast.makeText(Part16Activity.this, "You choose S.", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.item_popup_p16_m:
+                            Toast.makeText(Part16Activity.this, "You choose M.", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.item_popup_p16_l:
+                            Toast.makeText(Part16Activity.this, "You choose L.", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.item_popup_p16_xl:
+                            Toast.makeText(Part16Activity.this, "You choose XL.", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.item_popup_p16_xxl:
+                            Toast.makeText(Part16Activity.this, "You choose XXL.", Toast.LENGTH_SHORT).show();
+                            break;
+
+                    }
+                    return false;
+                }
+            });
+            popupMenu.show();
+
+        });
     }
 
     /**
@@ -163,6 +209,9 @@ public class Part16Activity extends AppCompatActivity {
                 break;
             case R.id.i_mn_p16_b:
                 textView.setBackgroundColor(Color.BLUE);
+                break;
+            case R.id.i_mn_p16_t:
+                textView.setBackgroundColor(Color.TRANSPARENT);
                 break;
         }
         return super.onContextItemSelected(item);
