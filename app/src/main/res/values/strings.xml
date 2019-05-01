@@ -127,4 +127,5 @@
     <string name="video">Video</string>
     <string name="youtube">Youtube</string>
     <string name="exit">Exit</string>
+    <string name="long_press_me_for_setting_background_color">Long press me for setting background color.</string>
 </resources>

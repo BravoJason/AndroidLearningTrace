@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/i_mn_p16_r"
+        android:orderInCategory="0"
+        android:title="Red" />
+    <item
+        android:id="@+id/i_mn_p16_g"
+        android:orderInCategory="1"
+        android:title="Green" />
+
+    <item
+        android:id="@+id/i_mn_p16_b"
+        android:orderInCategory="2"
+        android:title="Blue" />
+
+
+</menu>

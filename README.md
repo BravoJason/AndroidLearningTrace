@@ -24,4 +24,4 @@ This is a repository for logging the trace of learning the Android development.
 19. ExpandableListView
 20. ImageSwitcher and TextSwitcher
 21. ViewFlipper
-22. Menus(OptionsMenw)
+22. Menus(OptionsMenu, ContextMenu)
