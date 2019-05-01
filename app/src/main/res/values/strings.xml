@@ -128,4 +128,5 @@
     <string name="youtube">Youtube</string>
     <string name="exit">Exit</string>
     <string name="long_press_me_for_setting_background_color">Long press me for setting background color.</string>
+    <string name="set_size">Set size</string>
 </resources>

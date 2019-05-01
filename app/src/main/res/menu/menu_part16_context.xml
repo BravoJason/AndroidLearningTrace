@@ -13,6 +13,10 @@
         android:id="@+id/i_mn_p16_b"
         android:orderInCategory="2"
         android:title="Blue" />
+    <item
+        android:id="@+id/i_mn_p16_t"
+        android:orderInCategory="3"
+        android:title="Transparent" />
 
 
 </menu>
