@@ -17,4 +17,26 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- Inheritance from android default style.-->
+    <style name="textView_Style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/textBackgroundColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <!-- Inheritance from customized default style.-->
+    <style name="textView_Style2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/textBackgroundColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="textView_Style2.button">
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>

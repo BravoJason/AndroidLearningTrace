@@ -152,6 +152,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Part 19 Notification" />
+            <Button
+                android:id="@+id/btn_main_showPart20_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part 20 Style" />
         </LinearLayout>
 
 

@@ -28,3 +28,4 @@ This is a repository for logging the trace of learning the Android development.
 23. ViewPager
 24. PopupWindow
 25. Notification
+26. Style
