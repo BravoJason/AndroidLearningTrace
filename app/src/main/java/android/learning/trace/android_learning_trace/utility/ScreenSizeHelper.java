@@ -8,7 +8,7 @@ public class ScreenSizeHelper {
 
     /**
      * Return the device screen display Metrics in {@link DisplayMetrics} type.
-     *
+     * Convert formula: dp = density * px
      * @param activityContext Current screen holder {@link Activity} object.
      * @return Current screen {@link DisplayMetrics} object.
      */
