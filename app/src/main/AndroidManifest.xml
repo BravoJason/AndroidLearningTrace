@@ -32,7 +32,8 @@
         <activity android:name=".view.activity.Part14Activity" />
         <activity android:name=".view.activity.Part15Activity" />
         <activity android:name=".view.activity.Part16Activity" />
-        <activity android:name=".view.activity.Part17Activity"></activity>
+        <activity android:name=".view.activity.Part17Activity" />
+        <activity android:name=".view.activity.Part18Activity"></activity>
     </application>
 
 </manifest>
