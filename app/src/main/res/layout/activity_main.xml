@@ -140,6 +140,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Part 17 ViewPager" />
+
+            <Button
+                android:id="@+id/btn_main_showPart18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part 18 PopupWindow" />
         </LinearLayout>
 
 

@@ -129,4 +129,5 @@
     <string name="exit">Exit</string>
     <string name="long_press_me_for_setting_background_color">Long press me for setting background color.</string>
     <string name="set_size">Set size</string>
+    <string name="show_popup_window">Show popup window</string>
 </resources>
