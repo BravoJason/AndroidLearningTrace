@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.Part22CustomizedViewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customized widget" />
+
+    <android.learning.trace.android_learning_trace.view.activity.Part22CustomizedView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text="This is a customized view."
+        app:textColor="#00ff00"
+        app:textSize="30sp" />
+
+</LinearLayout>
