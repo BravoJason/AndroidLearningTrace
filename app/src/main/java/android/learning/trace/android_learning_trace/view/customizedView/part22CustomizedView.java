@@ -9,7 +9,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class Part22CustomizedView extends View {
+public class part22CustomizedView extends View {
 
     private int textColor;
     private float textSize;
@@ -33,14 +33,14 @@ public class Part22CustomizedView extends View {
      * @param attrs   The attributes of the XML tag that is inflating the view.
      * @see #View(Context, AttributeSet, int)
      */
-    public Part22CustomizedView(Context context, @Nullable AttributeSet attrs) {
+    public part22CustomizedView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         paint = new Paint();
         //Get customized view attr.
-        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.Part22CustomizedView);
-        textColor = array.getColor(R.styleable.Part22CustomizedView_textColor, 0x000000);
-        textSize = array.getDimension(R.styleable.Part22CustomizedView_textSize, 10);
-        text = array.getString(R.styleable.Part22CustomizedView_text);
+        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.part22CustomizedView);
+        textColor = array.getColor(R.styleable.part22CustomizedView_textColor, 0x000000);
+        textSize = array.getDimension(R.styleable.part22CustomizedView_textSize, 10);
+        text = array.getString(R.styleable.part22CustomizedView_text);
     }
 
     /**

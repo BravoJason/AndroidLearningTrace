@@ -39,7 +39,7 @@
         <activity
             android:name=".view.activity.Part21ThemeActivity"
             android:theme="@style/MyAppTheme" />
-        <activity android:name=".view.customizedView.Part22CustomizedView" />
+        <activity android:name=".view.customizedView.part22CustomizedView" />
         <activity android:name=".view.activity.Part22CustomizedViewActivity" />
         <activity android:name=".view.activity.Part23ScrollListViewActivity"></activity>
     </application>
