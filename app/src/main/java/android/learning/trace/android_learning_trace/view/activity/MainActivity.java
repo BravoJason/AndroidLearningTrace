@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart16 = findViewById(R.id.btn_main_showPart16);
         Button btnShowPart17 = findViewById(R.id.btn_main_showPart17);
         Button btnShowPart18 = findViewById(R.id.btn_main_showPart18);
+        Button btnShowPart19 = findViewById(R.id.btn_main_showPart19);
 
 
         //Init Basic UI activity intent.
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         Intent p16Intent = new Intent(this, Part16Activity.class);
         Intent p17Intent = new Intent(this, Part17Activity.class);
         Intent p18Intent = new Intent(this, Part18Activity.class);
-
+        Intent p19Intent = new Intent(this, Part19Activity.class);
 
         //Set button onClick callback listener.
         btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
@@ -91,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         btnShowPart16.setOnClickListener(v -> startActivity(p16Intent));
         btnShowPart17.setOnClickListener(v -> startActivity(p17Intent));
         btnShowPart18.setOnClickListener(v -> startActivity(p18Intent));
+        btnShowPart19.setOnClickListener(v -> startActivity(p19Intent));
 
     }
 }
