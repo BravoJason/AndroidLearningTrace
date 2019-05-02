@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.Part20StyleActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/textBackgroundColor"
+        android:text="Style 1"
+        android:textColor="@color/textColor"
+        android:textSize="35sp" />
+
+    <TextView
+        style="@style/textView_Style"
+        android:text="Style 2" />
+
+    <TextView
+        style="@style/textView_Style"
+        android:text="Override style"
+        android:textColor="#ffffff" />
+
+    <Button
+        style="@style/textView_Style2.button"
+        android:text="test" />
+
+</LinearLayout>
