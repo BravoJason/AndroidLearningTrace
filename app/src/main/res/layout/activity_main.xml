@@ -170,6 +170,12 @@
                 android:layout_height="wrap_content"
                 android:text="Part 22 Customized Widget" />
 
+            <Button
+                android:id="@+id/btn_main_showPart23_scroll_list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part 23 scroll_list_view" />
+
 
         </LinearLayout>
 

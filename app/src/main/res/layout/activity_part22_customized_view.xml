@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Customized widget" />
 
-    <android.learning.trace.android_learning_trace.view.activity.Part22CustomizedView
+    <android.learning.trace.android_learning_trace.view.customizedView.Part22CustomizedView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:text="This is a customized view."

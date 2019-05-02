@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart20Style = findViewById(R.id.btn_main_showPart20_style);
         Button btnShowPart21Theme = findViewById(R.id.btn_main_showPart21_theme);
         Button btnShowPart22CustomizedWidget = findViewById(R.id.btn_main_showPart22_customized_widget);
+        Button btnShowPart23ScrollListView = findViewById(R.id.btn_main_showPart23_scroll_list_view);
 
 
         //Init Basic UI activity intent.
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         Intent p20StyleIntent = new Intent(this, Part20StyleActivity.class);
         Intent p21ThemeIntent = new Intent(this, Part21ThemeActivity.class);
         Intent p22CustomizedViewIntent = new Intent(this, Part22CustomizedViewActivity.class);
+        Intent p23ScrollListViewIntent = new Intent(this, Part23ScrollListViewActivity.class);
 
         //Set button onClick callback listener.
         btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
@@ -102,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         btnShowPart20Style.setOnClickListener(v -> startActivity(p20StyleIntent));
         btnShowPart21Theme.setOnClickListener(v -> startActivity(p21ThemeIntent));
         btnShowPart22CustomizedWidget.setOnClickListener(v -> startActivity(p22CustomizedViewIntent));
+        btnShowPart23ScrollListView.setOnClickListener(v -> startActivity(p23ScrollListViewIntent));
 
     }
 }

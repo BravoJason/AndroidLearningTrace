@@ -1,4 +1,4 @@
-package android.learning.trace.android_learning_trace.view.activity;
+package android.learning.trace.android_learning_trace.view.customizedView;
 
 import android.content.Context;
 import android.content.res.TypedArray;
