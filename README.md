@@ -31,3 +31,4 @@ This is a repository for logging the trace of learning the Android development.
 26. Style
 27. Theme
 28. Customized View
+29. Activity

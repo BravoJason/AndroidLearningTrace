@@ -2,7 +2,7 @@ package android.learning.trace.android_learning_trace.adapter;
 
 import android.content.Context;
 import android.learning.trace.android_learning_trace.R;
-import android.learning.trace.android_learning_trace.module.CurrentFriendGroups;
+import android.learning.trace.android_learning_trace.model.CurrentFriendGroups;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;

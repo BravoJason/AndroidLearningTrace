@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Android-Learning-Trace</string>
     <string name="basicUI_showActivity_tv">Basic UI Component</string>
-    <string name="basicUI_p1_showActivity_p1_btn">Part 1</string>
+    <string name="basicUI_p1_showActivity_p1_btn">Part 1 Toast TextView Button</string>
     <string name="basicUI_showTextToast">Show Text Toast</string>
     <string name="basicUI_showImageToast">Show Image Toast</string>
     <string name="basicUI_showTextImageToast">Show Image And Text Toast</string>
@@ -16,7 +16,7 @@
     <string name="basicUI_tpButton">Transparent button</string>
     <string name="basicUI_btn_selector">Button selector</string>
     <string name="textview">TextView</string>
-    <string name="basicUI_showActivity_p2_button">Part 2</string>
+    <string name="basicUI_showActivity_p2_button">Part 2 CheckButton RadioButton RadioGroup Toggle Switch RatingBar</string>
     <string name="imageview_function_area">ImageView function area:</string>
     <string name="imageview_test_picture">ImageView test picture.</string>
     <string name="basicUI_checkbox_area">Checkbox function area:</string>
@@ -72,7 +72,6 @@
     <string name="content">content</string>
     <string name="loading">Loading</string>
     <string name="part_13_expandablelistview">Part 13 ExpandableListView</string>
-    <string name="group_icon">group icon</string>
     <string name="part_14_imageswitcher">Part 14 ImageSwitcher</string>
     <string name="part_15_viewflipper">Part 15 ViewFlipper</string>
     <string name="part_16_menus">Part 16 Menus</string>
@@ -122,7 +121,6 @@
         <item>Peter</item>
 
     </array>
-    <string name="title_activity_part16">MenuActivity</string>
     <string name="game">Game</string>
     <string name="video">Video</string>
     <string name="youtube">Youtube</string>
@@ -130,4 +128,6 @@
     <string name="long_press_me_for_setting_background_color">Long press me for setting background color.</string>
     <string name="set_size">Set size</string>
     <string name="show_popup_window">Show popup window</string>
+    <string name="core_feature">Core Feature</string>
+    <string name="part_24_activity_concept">Part 24 Activity Concept</string>
 </resources>

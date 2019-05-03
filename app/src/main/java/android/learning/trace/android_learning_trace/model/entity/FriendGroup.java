@@ -1,4 +1,4 @@
-package android.learning.trace.android_learning_trace.module.entity;
+package android.learning.trace.android_learning_trace.model.entity;
 
 import java.util.Vector;
 

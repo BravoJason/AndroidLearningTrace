@@ -54,11 +54,12 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart21Theme = findViewById(R.id.btn_main_showPart21_theme);
         Button btnShowPart22CustomizedWidget = findViewById(R.id.btn_main_showPart22_customized_widget);
         Button btnShowPart23ScrollListView = findViewById(R.id.btn_main_showPart23_scroll_list_view);
+        Button btnShowPart24AcitivityConcept = findViewById(R.id.btn_main_showPart24_activity_concept);
 
 
         //Init Basic UI activity intent.
-        Intent basicUIP1Intent = new Intent(getApplicationContext(), BasicUIComponentP1Activity.class);
-        Intent basicUIP2Intent = new Intent(getApplicationContext(), BasicUIComponentP2Activity.class);
+        Intent basicUIP1Intent = new Intent(getApplicationContext(), Part1TextView_Toast_ButtonActivity.class);
+        Intent basicUIP2Intent = new Intent(getApplicationContext(), Part2CBtn_RBtn_RGp_TBtn_Switch_RatingBarActivity.class);
         Intent basicUIP3Intent = new Intent(this, BasicUIComponentP3Activity.class);
         Intent basicUIP4Intent = new Intent(this, BasicUIComponentP4Activity.class);
         Intent p5Intent = new Intent(this, Part5Activity.class);
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         Intent p21ThemeIntent = new Intent(this, Part21ThemeActivity.class);
         Intent p22CustomizedViewIntent = new Intent(this, Part22CustomizedViewActivity.class);
         Intent p23ScrollListViewIntent = new Intent(this, Part23ScrollListViewActivity.class);
+        Intent p24ActivityConceptIntent = new Intent(this, Part24ActivityConceptActivity.class);
 
         //Set button onClick callback listener.
         btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
@@ -105,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         btnShowPart21Theme.setOnClickListener(v -> startActivity(p21ThemeIntent));
         btnShowPart22CustomizedWidget.setOnClickListener(v -> startActivity(p22CustomizedViewIntent));
         btnShowPart23ScrollListView.setOnClickListener(v -> startActivity(p23ScrollListViewIntent));
+        btnShowPart24AcitivityConcept.setOnClickListener(v -> startActivity(p24ActivityConceptIntent));
 
     }
 }

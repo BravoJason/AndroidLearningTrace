@@ -1,6 +1,8 @@
-package android.learning.trace.android_learning_trace.module.entity;
+package android.learning.trace.android_learning_trace.model.entity;
 
-public class News {
+import java.io.Serializable;
+
+public class News implements Serializable {
 
     private String title;
     private String content;
@@ -25,5 +27,10 @@ public class News {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return "title: " + title + " ,content: " + content;
     }
 }

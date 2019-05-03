@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.Part24ActivityConceptActivity">
+
+
+    <EditText
+        android:id="@+id/et_p24_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please input transfer data"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_p24_transferdata_bundle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer data into another activity from bundle" />
+
+    <Button
+        android:id="@+id/btn_p24_transferdata_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer data into another activity from Intent" />
+
+    <Button
+        android:id="@+id/btn_p24_transferObject_serializable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer serializable object into another activity" />
+
+    <Button
+        android:id="@+id/btn_p24_transferObject_parcelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer parcelable object into another activity" />
+
+    <Button
+        android:id="@+id/btn_p24_activity_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity result text." />
+
+    <Button
+        android:id="@+id/btn_p24_orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="orientationTest"
+        android:text="Orientation test" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ChangeOrientationTest"
+        android:text="Change screen view orientation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="SaveData"
+        android:text="Save data" />
+
+</LinearLayout>

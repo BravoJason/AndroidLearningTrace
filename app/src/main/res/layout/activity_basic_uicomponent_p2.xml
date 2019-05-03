@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.activity.BasicUIComponentP2Activity">
+    tools:context=".view.activity.Part2CBtn_RBtn_RGp_TBtn_Switch_RatingBarActivity">
 
     <TextView
-        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -36,13 +35,11 @@
         app:srcCompat="@mipmap/ic_android_robot_blue" />
 
     <View
-        android:id="@+id/divider3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
     <TextView
-        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -73,13 +70,11 @@
         android:text="@string/basicUI_show_ct_status" />
 
     <View
-        android:id="@+id/divider4"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
     <TextView
-        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -115,13 +110,11 @@
     </RadioGroup>
 
     <View
-        android:id="@+id/divider5"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
     <TextView
-        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -146,13 +139,11 @@
         android:textOn="@string/on" />
 
     <View
-        android:id="@+id/divider6"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
     <TextView
-        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -168,7 +159,6 @@
         android:stepSize="1" />
 
     <RatingBar
-        android:id="@+id/ratingBar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:isIndicator="true"

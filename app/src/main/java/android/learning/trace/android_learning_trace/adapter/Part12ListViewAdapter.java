@@ -2,7 +2,7 @@ package android.learning.trace.android_learning_trace.adapter;
 
 import android.content.Context;
 import android.learning.trace.android_learning_trace.R;
-import android.learning.trace.android_learning_trace.module.LocalNews;
+import android.learning.trace.android_learning_trace.model.LocalNews;
 import android.learning.trace.android_learning_trace.view.viewholder.Part12ListViewViewHolder;
 import android.view.LayoutInflater;
 import android.view.View;
