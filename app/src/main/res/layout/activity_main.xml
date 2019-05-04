@@ -175,18 +175,29 @@
             android:layout_height="wrap_content"
             android:text="Part 23 scroll_list_view" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/core_feature"
-            android:textSize="24sp"></TextView>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn_main_showPart24_activity_concept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/part_24_activity_concept" />
+
+        <Button
+            android:id="@+id/btn_main_showPart25_intent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part25_intent" />
 
 
     </LinearLayout>

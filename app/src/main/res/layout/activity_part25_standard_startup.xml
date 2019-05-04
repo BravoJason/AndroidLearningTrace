@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.Part25StandardStartupActivity">
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Current Activity: Part 25 Standard Startup" />
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Start up an activity with standard mode" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="StartActivityStandMode"
+        android:text="Search" />
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Go to Part25 Intent Activity" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="StartPart25IntentActivity"
+        android:text="Start" />
+
+</LinearLayout>
