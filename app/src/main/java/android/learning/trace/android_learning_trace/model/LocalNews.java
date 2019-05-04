@@ -1,6 +1,6 @@
-package android.learning.trace.android_learning_trace.module;
+package android.learning.trace.android_learning_trace.model;
 
-import android.learning.trace.android_learning_trace.module.entity.News;
+import android.learning.trace.android_learning_trace.model.entity.News;
 
 import java.util.Vector;
 

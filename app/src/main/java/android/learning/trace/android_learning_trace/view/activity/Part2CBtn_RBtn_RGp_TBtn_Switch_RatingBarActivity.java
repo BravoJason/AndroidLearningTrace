@@ -14,7 +14,7 @@ import android.widget.Switch;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-public class BasicUIComponentP2Activity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
+public class Part2CBtn_RBtn_RGp_TBtn_Switch_RatingBarActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
     CheckBox checkBox1, checkBox2, checkBox3;
     Button btnShowCheckboxStatus;
@@ -139,7 +139,7 @@ public class BasicUIComponentP2Activity extends AppCompatActivity implements Com
                     strStatus = "Toggle button is unchecked.";
                 }
 
-                Toast.makeText(BasicUIComponentP2Activity.this, strStatus, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Part2CBtn_RBtn_RGp_TBtn_Switch_RatingBarActivity.this, strStatus, Toast.LENGTH_SHORT).show();
             }
         });
 

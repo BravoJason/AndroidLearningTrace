@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.orhanobut.logger.Logger;
 
-public class BasicUIComponentP1Activity extends AppCompatActivity {
+public class Part1TextView_Toast_ButtonActivity extends AppCompatActivity {
 
 
     @Override

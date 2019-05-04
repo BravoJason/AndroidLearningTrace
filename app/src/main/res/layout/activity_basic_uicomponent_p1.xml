@@ -4,10 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.activity.BasicUIComponentP1Activity">
+    tools:context=".view.activity.Part1TextView_Toast_ButtonActivity">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -32,20 +31,17 @@
         android:text="@string/basicUI_showTextImageToast" />
 
     <View
-        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/basicUI_textview_area" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/textview" />
@@ -61,13 +57,11 @@
         android:inputType="text" />
 
     <View
-        android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -80,7 +74,6 @@
         android:text="@string/basicUI_textbutton" />
 
     <ImageButton
-        android:id="@+id/btn_imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/basicUI_imageButton"
@@ -95,7 +88,6 @@
         android:text="@string/basicUI_tpButton" />
 
     <Button
-        android:id="@+id/btn_selector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_bg"

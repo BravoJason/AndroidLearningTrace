@@ -1,7 +1,7 @@
 package android.learning.trace.android_learning_trace.presenter;
 
 import android.learning.trace.android_learning_trace.adapter.Part12ListViewAdapter;
-import android.learning.trace.android_learning_trace.module.LocalNews;
+import android.learning.trace.android_learning_trace.model.LocalNews;
 import android.learning.trace.android_learning_trace.view.activity.Part12Activity;
 
 public class Part12Presenter {

@@ -1,186 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".view.activity.MainActivity">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/basicUI_showActivity_tv"
-        android:textSize="24sp">
-
-    </TextView>
-
-    <Button
-        android:id="@+id/btn_basicUI_show_p1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/basicUI_p1_showActivity_p1_btn" />
-
-    <Button
-        android:id="@+id/btn_basicUI_show_p2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/basicUI_showActivity_p2_button" />
-
-    <Button
-        android:id="@+id/btn_basicUI_show_p3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/part_3" />
-
-    <Button
-        android:id="@+id/btn_basicUI_show_p4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/part_4" />
-
-    <View
-        android:id="@+id/divider10"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider" />
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/advanced_ui_component"
-        android:textSize="24sp">
+        android:orientation="vertical">
 
-    </TextView>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_gravity="center"
+            android:text="@string/basicUI_showActivity_tv"
+            android:textSize="24sp">
 
-            <Button
-                android:id="@+id/btn_main_showPart5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_5" />
+        </TextView>
 
-            <Button
-                android:id="@+id/btn_main_showPart6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_6" />
+        <Button
+            android:id="@+id/btn_basicUI_show_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basicUI_p1_showActivity_p1_btn" />
 
-            <Button
-                android:id="@+id/btn_main_showPart7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_7" />
+        <Button
+            android:id="@+id/btn_basicUI_show_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basicUI_showActivity_p2_button" />
 
-            <Button
-                android:id="@+id/btn_main_showPart8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_8_listactivity" />
+        <Button
+            android:id="@+id/btn_basicUI_show_p3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_3" />
 
-            <Button
-                android:id="@+id/btn_main_showPart9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_9_selected_listview" />
+        <Button
+            android:id="@+id/btn_basicUI_show_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_4" />
 
-            <Button
-                android:id="@+id/btn_main_showPart10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_10_imagetext_listview" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
 
-            <Button
-                android:id="@+id/btn_main_showPart11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_11_simpleadapter_listview" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/advanced_ui_component"
+            android:textSize="24sp">
 
-            <Button
-                android:id="@+id/btn_main_showPart12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_12_multipages_listview" />
-            <Button
-                android:id="@+id/btn_main_showPart13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_13_expandablelistview" />
-
-            <Button
-                android:id="@+id/btn_main_showPart14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_14_imageswitcher" />
-
-            <Button
-                android:id="@+id/btn_main_showPart15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_15_viewflipper" />
-
-            <Button
-                android:id="@+id/btn_main_showPart16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/part_16_menus" />
-
-            <Button
-                android:id="@+id/btn_main_showPart17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Part 17 ViewPager" />
-
-            <Button
-                android:id="@+id/btn_main_showPart18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Part 18 PopupWindow" />
-
-            <Button
-                android:id="@+id/btn_main_showPart19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Part 19 Notification" />
-            <Button
-                android:id="@+id/btn_main_showPart20_style"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Part 20 Style" />
-
-            <Button
-                android:id="@+id/btn_main_showPart21_theme"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Part 21 Theme" />
-
-            <Button
-                android:id="@+id/btn_main_showPart22_customized_widget"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Part 22 Customized Widget" />
-
-            <Button
-                android:id="@+id/btn_main_showPart23_scroll_list_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Part 23 scroll_list_view" />
+        </TextView>
 
 
-        </LinearLayout>
+        <Button
+            android:id="@+id/btn_main_showPart5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_5" />
+
+        <Button
+            android:id="@+id/btn_main_showPart6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_6" />
+
+        <Button
+            android:id="@+id/btn_main_showPart7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_7" />
+
+        <Button
+            android:id="@+id/btn_main_showPart8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_8_listactivity" />
+
+        <Button
+            android:id="@+id/btn_main_showPart9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_9_selected_listview" />
+
+        <Button
+            android:id="@+id/btn_main_showPart10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_10_imagetext_listview" />
+
+        <Button
+            android:id="@+id/btn_main_showPart11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_11_simpleadapter_listview" />
+
+        <Button
+            android:id="@+id/btn_main_showPart12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_12_multipages_listview" />
+
+        <Button
+            android:id="@+id/btn_main_showPart13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_13_expandablelistview" />
+
+        <Button
+            android:id="@+id/btn_main_showPart14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_14_imageswitcher" />
+
+        <Button
+            android:id="@+id/btn_main_showPart15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_15_viewflipper" />
+
+        <Button
+            android:id="@+id/btn_main_showPart16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_16_menus" />
+
+        <Button
+            android:id="@+id/btn_main_showPart17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part 17 ViewPager" />
+
+        <Button
+            android:id="@+id/btn_main_showPart18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part 18 PopupWindow" />
+
+        <Button
+            android:id="@+id/btn_main_showPart19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part 19 Notification" />
+
+        <Button
+            android:id="@+id/btn_main_showPart20_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part 20 Style" />
+
+        <Button
+            android:id="@+id/btn_main_showPart21_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part 21 Theme" />
+
+        <Button
+            android:id="@+id/btn_main_showPart22_customized_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part 22 Customized Widget" />
+
+        <Button
+            android:id="@+id/btn_main_showPart23_scroll_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part 23 scroll_list_view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/core_feature"
+            android:textSize="24sp"></TextView>
+
+        <Button
+            android:id="@+id/btn_main_showPart24_activity_concept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_24_activity_concept" />
 
 
-    </ScrollView>
+    </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>
+
+
