@@ -130,4 +130,12 @@
     <string name="show_popup_window">Show popup window</string>
     <string name="core_feature">Core Feature</string>
     <string name="part_24_activity_concept">Part 24 Activity Concept</string>
+    <string name="part25_intent">Part25 Intent</string>
+
+    <array name="activity_mode">
+        <item>Standard</item>
+        <item>SingleTop</item>
+        <item>SingleTask</item>
+        <item>NewTask</item>
+    </array>
 </resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    tools:context=".view.activity.Part25IntentActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Use component name to search an intent." />
+
+        <Button
+            style="@style/ButtonViewStyle"
+            android:onClick="SearchIntentByComponentName"
+            android:text="Search" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Use action to search an intent." />
+
+        <Button
+            style="@style/ButtonViewStyle"
+            android:onClick="SearchIntentByAction"
+            android:text="Search" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Use category to search an intent." />
+
+        <Button
+            style="@style/ButtonViewStyle"
+            android:onClick="SearchIntentByCategory"
+            android:text="Search" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Use data to search an intent." />
+
+        <Button
+            style="@style/ButtonViewStyle"
+            android:onClick="SearchIntentByData"
+            android:text="Search" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Use an intent to open a web browser." />
+
+        <Button
+            style="@style/ButtonViewStyle"
+            android:onClick="OpenWebBrowserByIntent"
+            android:text="Search" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Use type to search an intent." />
+
+        <Button
+            style="@style/ButtonViewStyle"
+            android:onClick="SearchIntentByType"
+            android:text="Search" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Start an activity in for modes." />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Current Activity: Part25 Intent" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Please select mode" />
+
+        <Spinner
+            android:id="@+id/spinner_p25_activity_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/activity_mode" />
+
+
+        <Button
+            style="@style/ButtonViewStyle"
+            android:onClick="StartActivity"
+            android:text="Start  " />
+    </LinearLayout>
+
+
+</ScrollView>
