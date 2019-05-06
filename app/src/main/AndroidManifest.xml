@@ -86,6 +86,21 @@
         <activity
             android:name=".view.activity.Part25StandardStartupActivity"
             android:launchMode="standard" />
+        <activity android:name=".view.activity.Part26ServiceActivity" />
+
+        <service
+            android:name=".service.Part26Service"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+        <service
+            android:name=".service.Part26IntentService"
+            android:exported="true" />
+        <service
+            android:name=".service.Part26BoundService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote_bound_service" />
     </application>
 
 </manifest>
