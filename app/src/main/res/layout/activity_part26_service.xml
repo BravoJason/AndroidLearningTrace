@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.Part26ServiceActivity">
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Service" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="StartService"
+        android:text="Start a service" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="StopService"
+        android:text="Stop a service" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="StartIntentService"
+        android:text="Start an intent service" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="BindService"
+        android:text="Start a bound service" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="UnbindService"
+        android:text="Unbound a  service" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="CallService"
+        android:text="Call service through IPC" />
+
+
+</LinearLayout>
