@@ -1,5 +1,6 @@
 package android.learning.trace.android_learning_trace.view.activity;
 
+import android.app.Service;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -8,11 +9,15 @@ import android.learning.trace.android_learning_trace.R;
 import android.learning.trace.android_learning_trace.service.IPart26AidlInterface;
 import android.learning.trace.android_learning_trace.service.Part26BoundService;
 import android.learning.trace.android_learning_trace.service.Part26IntentService;
+import android.learning.trace.android_learning_trace.service.Part26MessengerService;
 import android.learning.trace.android_learning_trace.service.Part26Service;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.Message;
+import android.os.Messenger;
 import android.os.RemoteException;
 import android.support.v7.app.AppCompatActivity;
+import android.telecom.Connection;
 import android.view.View;
 import android.widget.Toast;
 
@@ -38,9 +43,17 @@ import android.widget.Toast;
  * AIDL:
  * Can not have the access modifier.Like an interface syntax.
  * Support type: 8 basic data type. String, CharSequence, List<String>, Map, Customized type.
+ *      Customized type:
+ *          1. Implement the parcelable interface.
+ *          2. Create an AIDL file to declare the type.
+ *          3. Import it into other AIDL file and then use it.
  * 4. Server side need to provide an implement of the biz interface. Usually, extend the Stub class.
  * 5. Use onBind() in Service to return the bound biz object.
  * 6. If the client side binds successfully, the client side can call the functions like call the local functions as well.
+ *
+ * Start service will be existing in long time unless the user stop the service.
+ * Bind service will be stop in the time when the user unbind the serivce.
+ * Tips: Start the service and then bind service.
  */
 
 public class Part26ServiceActivity extends AppCompatActivity {
@@ -124,6 +137,46 @@ public class Part26ServiceActivity extends AppCompatActivity {
         if (part26AidlInterface != null) {
             part26AidlInterface.setName("Test Bound");
             Toast.makeText(this, part26AidlInterface.desc(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, part26AidlInterface.getServiceInfo().toString(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    Messenger messengerService;
+    Boolean flag;
+
+    public void BindMessengerService(View view) {
+
+        Intent intent = new Intent(this, Part26MessengerService.class);
+        bindService(intent, conn2, BIND_AUTO_CREATE);
+
+
+
+    }
+
+    private ServiceConnection conn2 = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            messengerService = new Messenger(service);
+            flag = true;
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+            flag = false;
+            messengerService = null;
+
+        }
+    };
+
+    public void SendMessageToService(View view) {
+
+        Message msg = Message.obtain();
+        msg.what = Part26MessengerService.SAY_HELLO;
+        msg.obj = "Message test info";
+        try {
+            messengerService.send(msg);
+        } catch (RemoteException e) {
+            e.printStackTrace();
         }
     }
 }
