@@ -40,5 +40,15 @@
         android:onClick="CallService"
         android:text="Call service through IPC" />
 
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="BindMessengerService"
+        android:text="Bind messenger service" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="SendMessageToService"
+        android:text="Send message to service" />
+
 
 </LinearLayout>

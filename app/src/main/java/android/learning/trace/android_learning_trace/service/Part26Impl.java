@@ -1,8 +1,17 @@
 package android.learning.trace.android_learning_trace.service;
 
+import android.learning.trace.android_learning_trace.model.Part26ServiceInfo;
+import android.os.RemoteException;
+
 public class Part26Impl extends IPart26AidlInterface.Stub {
 
     String name;
+
+    @Override
+    public Part26ServiceInfo getServiceInfo() throws RemoteException {
+        Part26ServiceInfo part26ServiceInfo = new Part26ServiceInfo("Part26Service", "This is a test service");
+        return part26ServiceInfo;
+    }
 
     @Override
     public void setName(String name) {
