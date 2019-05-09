@@ -3,6 +3,33 @@ package android.learning.trace.android_learning_trace.view.activity;
 
 import android.content.Intent;
 import android.learning.trace.android_learning_trace.R;
+import android.learning.trace.android_learning_trace.view.activity.broadcast.Part27BroadcastActivity;
+import android.learning.trace.android_learning_trace.view.activity.intent.Part25IntentActivity;
+import android.learning.trace.android_learning_trace.view.activity.service.Part26ServiceActivity;
+import android.learning.trace.android_learning_trace.view.activity.ui.BasicUIComponentP3Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.BasicUIComponentP4Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part10Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part11Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part12Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part13Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part14Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part15Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part16Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part17Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part18Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part19Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part1TextView_Toast_ButtonActivity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part20StyleActivity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part21ThemeActivity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part22CustomizedViewActivity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part23ScrollListViewActivity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part24ActivityConceptActivity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part2CBtn_RBtn_RGp_TBtn_Switch_RatingBarActivity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part5Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part6Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part7Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part8Activity;
+import android.learning.trace.android_learning_trace.view.activity.ui.Part9Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
@@ -56,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart23ScrollListView = findViewById(R.id.btn_main_showPart23_scroll_list_view);
         Button btnShowPart24AcitivityConcept = findViewById(R.id.btn_main_showPart24_activity_concept);
         Button btnShowPart25IntentConcept = findViewById(R.id.btn_main_showPart25_intent);
-        Button btnShowPart25ServiceConcept = findViewById(R.id.btn_main_showPart26_service);
+        Button btnShowPart26ServiceConcept = findViewById(R.id.btn_main_showPart26_service);
+        Button btnShowPart27ServiceConcept = findViewById(R.id.btn_main_showPart27_broadcast);
 
 
         //Init Basic UI activity intent.
@@ -86,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
         Intent p24ActivityConceptIntent = new Intent(this, Part24ActivityConceptActivity.class);
         Intent p25Intent = new Intent(this, Part25IntentActivity.class);
         Intent p26Intent = new Intent(this, Part26ServiceActivity.class);
+        Intent p27Intent = new Intent(this, Part27BroadcastActivity.class);
 
         //Set button onClick callback listener.
         btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
@@ -113,7 +142,8 @@ public class MainActivity extends AppCompatActivity {
         btnShowPart23ScrollListView.setOnClickListener(v -> startActivity(p23ScrollListViewIntent));
         btnShowPart24AcitivityConcept.setOnClickListener(v -> startActivity(p24ActivityConceptIntent));
         btnShowPart25IntentConcept.setOnClickListener(v -> startActivity(p25Intent));
-        btnShowPart25ServiceConcept.setOnClickListener(v -> startActivity(p26Intent));
+        btnShowPart26ServiceConcept.setOnClickListener(v -> startActivity(p26Intent));
+        btnShowPart27ServiceConcept.setOnClickListener(v -> startActivity(p27Intent));
 
     }
 }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
-    tools:context=".view.activity.Part17Activity">
+    tools:context=".view.activity.ui.Part17Activity">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_part17"

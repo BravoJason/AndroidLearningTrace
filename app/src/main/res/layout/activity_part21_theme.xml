@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.activity.Part21ThemeActivity">
+    tools:context=".view.activity.ui.Part21ThemeActivity">
 
     <TextView
         style="@style/textView_Style2"

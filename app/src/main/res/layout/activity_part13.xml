@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.Part13Activity">
+    tools:context=".view.activity.ui.Part13Activity">
 
     <ExpandableListView
         android:id="@+id/elv_p13"

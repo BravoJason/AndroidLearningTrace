@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".view.activity.Part14Activity">
+    tools:context=".view.activity.ui.Part14Activity">
 
     <ImageSwitcher
         android:id="@+id/is_p14"

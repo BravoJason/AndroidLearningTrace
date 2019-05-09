@@ -205,6 +205,12 @@
             android:layout_height="wrap_content"
             android:text="@string/part26_service" />
 
+        <Button
+            android:id="@+id/btn_main_showPart27_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part27 Broadcast" />
+
 
     </LinearLayout>
 

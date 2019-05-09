@@ -2,8 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.learning.trace.android_learning_trace">
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -16,44 +21,44 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.Part1TextView_Toast_ButtonActivity" />
-        <activity android:name=".view.activity.Part2CBtn_RBtn_RGp_TBtn_Switch_RatingBarActivity" />
-        <activity android:name=".view.activity.BasicUIComponentP3Activity" />
-        <activity android:name=".view.activity.BasicUIComponentP4Activity" />
-        <activity android:name=".view.activity.Part5Activity" />
-        <activity android:name=".view.activity.Part6Activity" />
-        <activity android:name=".view.activity.Part7Activity" />
-        <activity android:name=".view.activity.Part8Activity" />
-        <activity android:name=".view.activity.Part9Activity" />
-        <activity android:name=".view.activity.Part10Activity" />
-        <activity android:name=".view.activity.Part11Activity" />
-        <activity android:name=".view.activity.Part12Activity" />
-        <activity android:name=".view.activity.Part13Activity" />
-        <activity android:name=".view.activity.Part14Activity" />
-        <activity android:name=".view.activity.Part15Activity" />
-        <activity android:name=".view.activity.Part16Activity" />
-        <activity android:name=".view.activity.Part17Activity" />
-        <activity android:name=".view.activity.Part18Activity" />
-        <activity android:name=".view.activity.Part19Activity" />
-        <activity android:name=".view.activity.Part20StyleActivity" />
+        <activity android:name=".view.activity.ui.Part1TextView_Toast_ButtonActivity" />
+        <activity android:name=".view.activity.ui.Part2CBtn_RBtn_RGp_TBtn_Switch_RatingBarActivity" />
+        <activity android:name=".view.activity.ui.BasicUIComponentP3Activity" />
+        <activity android:name=".view.activity.ui.BasicUIComponentP4Activity" />
+        <activity android:name=".view.activity.ui.Part5Activity" />
+        <activity android:name=".view.activity.ui.Part6Activity" />
+        <activity android:name=".view.activity.ui.Part7Activity" />
+        <activity android:name=".view.activity.ui.Part8Activity" />
+        <activity android:name=".view.activity.ui.Part9Activity" />
+        <activity android:name=".view.activity.ui.Part10Activity" />
+        <activity android:name=".view.activity.ui.Part11Activity" />
+        <activity android:name=".view.activity.ui.Part12Activity" />
+        <activity android:name=".view.activity.ui.Part13Activity" />
+        <activity android:name=".view.activity.ui.Part14Activity" />
+        <activity android:name=".view.activity.ui.Part15Activity" />
+        <activity android:name=".view.activity.ui.Part16Activity" />
+        <activity android:name=".view.activity.ui.Part17Activity" />
+        <activity android:name=".view.activity.ui.Part18Activity" />
+        <activity android:name=".view.activity.ui.Part19Activity" />
+        <activity android:name=".view.activity.ui.Part20StyleActivity" />
         <activity
-            android:name=".view.activity.Part21ThemeActivity"
+            android:name=".view.activity.ui.Part21ThemeActivity"
             android:theme="@style/MyAppTheme" />
-        <activity android:name=".view.activity.Part22CustomizedViewActivity" />
-        <activity android:name=".view.activity.Part23ScrollListViewActivity" />
-        <activity android:name=".view.activity.Part24ActivityConceptActivity" />
-        <activity android:name=".view.activity.Part24TransferDataActivity" />
-        <activity android:name=".view.activity.Part24ResultActivity" />
+        <activity android:name=".view.activity.ui.Part22CustomizedViewActivity" />
+        <activity android:name=".view.activity.ui.Part23ScrollListViewActivity" />
+        <activity android:name=".view.activity.ui.Part24ActivityConceptActivity" />
+        <activity android:name=".view.activity.ui.Part24TransferDataActivity" />
+        <activity android:name=".view.activity.ui.Part24ResultActivity" />
         <activity
-            android:name=".view.activity.Part24OrientationActivity"
+            android:name=".view.activity.ui.Part24OrientationActivity"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.DeviceDefault.Dialog" />
         <activity
-            android:name=".view.activity.Part24ScreenChangeActivity"
+            android:name=".view.activity.ui.Part24ScreenChangeActivity"
             android:configChanges="keyboard|screenSize" />
-        <activity android:name=".view.activity.Part24SaveDataActivity" />
-        <activity android:name=".view.activity.Part25IntentActivity" />
-        <activity android:name=".view.activity.Part25IntentTestActivity">
+        <activity android:name=".view.activity.ui.Part24SaveDataActivity" />
+        <activity android:name=".view.activity.intent.Part25IntentActivity" />
+        <activity android:name=".view.activity.intent.Part25IntentTestActivity">
             <intent-filter android:priority="-1">
                 <action android:name="android.learning.trace.android_learning_trace.action.INTENT_ACTION_TEST" />
                 <action android:name="android.learning.trace.android_learning_trace.action.INTENT_DATA_TEST" />
@@ -70,7 +75,7 @@
                     android:scheme="http" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.Part25IntentTest2Activity">
+        <activity android:name=".view.activity.intent.Part25IntentTest2Activity">
             <intent-filter android:priority="1">
                 <action android:name="android.learning.trace.android_learning_trace.action.INTENT_ACTION_TEST" />
 
@@ -84,9 +89,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.activity.Part25StandardStartupActivity"
+            android:name=".view.activity.intent.Part25StandardStartupActivity"
             android:launchMode="standard" />
-        <activity android:name=".view.activity.Part26ServiceActivity" />
+        <activity android:name=".view.activity.service.Part26ServiceActivity" />
 
         <service
             android:name=".service.Part26Service"
@@ -101,10 +106,58 @@
             android:enabled="true"
             android:exported="true"
             android:process=":remote_bound_service" />
-
         <service
             android:name=".service.Part26MessengerService"
             android:exported="true" />
+
+        <activity android:name=".view.activity.broadcast.Part27BroadcastActivity" />
+
+        <receiver
+            android:name=".view.activity.broadcast.Part27NormalBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.learning.trace.android_learning_trace.action.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".view.activity.broadcast.Part27OrderedBroadCastReceiver1"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".view.activity.broadcast.Part27OrderedBroadCastReceiver2"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".view.activity.broadcast.Part27SystemBroadCastReceiver_BootComplete"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".view.activity.broadcast.Part27SystemBroadCastReceiver_Connectivity_Change"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".view.activity.broadcast.Part27SystemBroadCastReceiver_Battery_Change"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".view.activity.broadcast.Part27SMSReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".view.activity.broadcast.Part27AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".view.activity.broadcast.Part27AlarmActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar" />
     </application>
 
 </manifest>

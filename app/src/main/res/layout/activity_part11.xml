@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.Part11Activity">
+    tools:context=".view.activity.ui.Part11Activity">
 
     <ListView
         android:id="@+id/lv_p11"

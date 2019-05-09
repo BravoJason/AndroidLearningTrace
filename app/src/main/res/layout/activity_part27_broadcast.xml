@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.broadcast.Part27BroadcastActivity">
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Register normal broadcast receiver." />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="RegisterNormalBroadcastReceiver"
+        android:text="Send" />
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Send normal broadcast" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="SendNormalBroadcast"
+        android:text="Send" />
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Unregister normal broadcast receiver." />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="UnregisterNormalBroadcastReceiver"
+        android:text="Send" />
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Send ordered broadcast." />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="SendOrderedBroadcast"
+        android:text="Send" />
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Send text message." />
+
+    <EditText
+        android:id="@+id/etv_p27_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please input the phone number here."
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etv_p27_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please input the text message." />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="SendTextMessage"
+        android:text="Send" />
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Set alarm" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="SetAlarm"
+        android:text="Send" />
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Set dialog alarm" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:onClick="SetDialogAlarm"
+        android:text="Send" />
+
+
+</LinearLayout>
