@@ -158,6 +158,7 @@
         <activity
             android:name=".view.activity.broadcast.Part27AlarmActivity"
             android:theme="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar" />
+        <activity android:name=".view.activity.fragment.Part28FragmentActivity"></activity>
     </application>
 
 </manifest>
