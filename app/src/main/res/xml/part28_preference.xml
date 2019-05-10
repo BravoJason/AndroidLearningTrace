@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Mute">
+        <CheckBoxPreference
+            android:key="isMute"
+            android:summary="Set whether the app is mute or not."
+            android:title="Mute" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="User preference">
+        <EditTextPreference
+            android:dialogTitle="Username dialog"
+            android:key="username"
+            android:summary="Current username"
+            android:title="Username" />
+        <ListPreference
+            android:dialogTitle="City name"
+            android:entries="@array/city"
+            android:entryValues="@array/city"
+            android:key="city"
+            android:summary="Please select a city."
+            android:title="City" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -35,3 +35,4 @@ This is a repository for logging the trace of learning the Android development.
 30. Intent
 31. Service
 32. Broadcast
+33. Fragment

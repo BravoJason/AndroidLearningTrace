@@ -4,6 +4,7 @@ package android.learning.trace.android_learning_trace.view.activity;
 import android.content.Intent;
 import android.learning.trace.android_learning_trace.R;
 import android.learning.trace.android_learning_trace.view.activity.broadcast.Part27BroadcastActivity;
+import android.learning.trace.android_learning_trace.view.activity.fragment.Part28FragmentActivity;
 import android.learning.trace.android_learning_trace.view.activity.intent.Part25IntentActivity;
 import android.learning.trace.android_learning_trace.view.activity.service.Part26ServiceActivity;
 import android.learning.trace.android_learning_trace.view.activity.ui.BasicUIComponentP3Activity;
@@ -81,10 +82,11 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart21Theme = findViewById(R.id.btn_main_showPart21_theme);
         Button btnShowPart22CustomizedWidget = findViewById(R.id.btn_main_showPart22_customized_widget);
         Button btnShowPart23ScrollListView = findViewById(R.id.btn_main_showPart23_scroll_list_view);
-        Button btnShowPart24AcitivityConcept = findViewById(R.id.btn_main_showPart24_activity_concept);
+        Button banShowPart24ActivityConcept = findViewById(R.id.btn_main_showPart24_activity_concept);
         Button btnShowPart25IntentConcept = findViewById(R.id.btn_main_showPart25_intent);
         Button btnShowPart26ServiceConcept = findViewById(R.id.btn_main_showPart26_service);
-        Button btnShowPart27ServiceConcept = findViewById(R.id.btn_main_showPart27_broadcast);
+        Button btnShowPart27Broadcast = findViewById(R.id.btn_main_showPart27_broadcast);
+        Button btnShowPart28Fragment = findViewById(R.id.btn_main_showPart28_fragment);
 
 
         //Init Basic UI activity intent.
@@ -115,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         Intent p25Intent = new Intent(this, Part25IntentActivity.class);
         Intent p26Intent = new Intent(this, Part26ServiceActivity.class);
         Intent p27Intent = new Intent(this, Part27BroadcastActivity.class);
+        Intent p28Intent = new Intent(this, Part28FragmentActivity.class);
 
         //Set button onClick callback listener.
         btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
@@ -140,10 +143,11 @@ public class MainActivity extends AppCompatActivity {
         btnShowPart21Theme.setOnClickListener(v -> startActivity(p21ThemeIntent));
         btnShowPart22CustomizedWidget.setOnClickListener(v -> startActivity(p22CustomizedViewIntent));
         btnShowPart23ScrollListView.setOnClickListener(v -> startActivity(p23ScrollListViewIntent));
-        btnShowPart24AcitivityConcept.setOnClickListener(v -> startActivity(p24ActivityConceptIntent));
+        banShowPart24ActivityConcept.setOnClickListener(v -> startActivity(p24ActivityConceptIntent));
         btnShowPart25IntentConcept.setOnClickListener(v -> startActivity(p25Intent));
         btnShowPart26ServiceConcept.setOnClickListener(v -> startActivity(p26Intent));
-        btnShowPart27ServiceConcept.setOnClickListener(v -> startActivity(p27Intent));
+        btnShowPart27Broadcast.setOnClickListener(v -> startActivity(p27Intent));
+        btnShowPart28Fragment.setOnClickListener(v -> startActivity(p28Intent));
 
     }
 }

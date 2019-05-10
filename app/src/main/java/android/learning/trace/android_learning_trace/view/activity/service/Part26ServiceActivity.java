@@ -170,7 +170,10 @@ public class Part26ServiceActivity extends AppCompatActivity {
         msg.what = Part26MessengerService.SAY_HELLO;
         msg.obj = "Message test info";
         try {
-            messengerService.send(msg);
+            if (messengerService != null) {
+                messengerService.send(msg);
+            }
+
         } catch (RemoteException e) {
             e.printStackTrace();
         }

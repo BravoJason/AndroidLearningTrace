@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ff00"
+    android:orientation="vertical">
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:text="Time" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:text="Place" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:text="Role" />
+
+    <Button
+        style="@style/ButtonViewStyle"
+        android:text="Event" />
+
+</LinearLayout>

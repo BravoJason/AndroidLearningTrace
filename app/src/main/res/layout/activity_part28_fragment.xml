@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    tools:context=".view.activity.fragment.Part28FragmentActivity">
+
+    <Button
+        android:id="@+id/btn_part28_first_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ChangeSideBarOneClick"
+        android:text="First fragment." />
+
+    <Button
+        android:id="@+id/btn_part28_Second_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ChangeSideBarTwoClick"
+        android:text="Second fragment."
+        app:layout_constraintBottom_toBottomOf="@id/btn_part28_first_fragment"
+        app:layout_constraintLeft_toRightOf="@id/btn_part28_first_fragment" />
+
+    <Button
+        android:id="@+id/btn_part28_parameter_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ChangeSideBarWithParameterClick"
+        android:text="Second fragment."
+        app:layout_constraintTop_toBottomOf="@id/btn_part28_first_fragment" />
+
+
+    <fragment
+        android:id="@+id/fragment_p28_title"
+        android:name="android.learning.trace.android_learning_trace.view.activity.fragment.Part28TitleFragment"
+        android:layout_width="0dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_p28_menu"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_p28_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_part28_parameter_fragment"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout="@layout/layout_p28_fragment_title" />
+
+    <fragment
+        android:id="@+id/fragment_p28_content"
+        android:name="android.learning.trace.android_learning_trace.view.activity.fragment.Part28ContentFragment"
+        android:layout_width="0dp"
+        android:layout_height="246dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/frame_p28_menu"
+        app:layout_constraintEnd_toStartOf="@+id/frame_p28_sideBar"
+        app:layout_constraintStart_toEndOf="@+id/fragment_p28_title"
+        app:layout_constraintTop_toTopOf="@+id/fragment_p28_title"
+        tools:layout="@layout/layout_p28_fragment_content" />
+
+    <FrameLayout
+        android:id="@+id/frame_p28_sideBar"
+        android:layout_width="0dp"
+        android:layout_height="591dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_p28_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_part28_first_fragment"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <fragment
+        android:id="@+id/frame_p28_menu"
+        android:name="android.learning.trace.android_learning_trace.view.activity.fragment.Part28MenuFragment"
+        android:layout_width="135dp"
+        android:layout_height="335dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_p28_content"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/fragment_part28_menu" />
+
+    <fragment
+        android:id="@+id/frame_p28_preference"
+        android:name="android.learning.trace.android_learning_trace.view.activity.fragment.Part28PreferenceFragment"
+        android:layout_width="135dp"
+        android:layout_height="335dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frame_p28_sideBar"
+        app:layout_constraintStart_toEndOf="@+id/frame_p28_menu"
+        app:layout_constraintTop_toTopOf="@+id/frame_p28_menu"
+        tools:layout="@layout/fragment_part28_preference" />
+
+</android.support.constraint.ConstraintLayout>
