@@ -13,7 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="ChangeSideBarOneClick"
-        android:text="First fragment." />
+        android:text="First fragment."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_part28_Second_fragment"
@@ -30,6 +32,7 @@
         android:layout_height="wrap_content"
         android:onClick="ChangeSideBarWithParameterClick"
         android:text="Second fragment."
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_part28_first_fragment" />
 
 
