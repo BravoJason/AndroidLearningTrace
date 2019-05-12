@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.ui.Part18Activity">
+    tools:context=".view.activity.actionBar.Part29TextReceiverActivity">
 
-    <Button
-        android:id="@+id/btn_part18_show_window"
+    <TextView
+        android:id="@+id/tv_p29_receivedText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/show_popup_window"
-        app:layout_constraintLeft_toRightOf="parent"
-        app:layout_constraintRight_toLeftOf="parent"
+        android:text="Received text"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
