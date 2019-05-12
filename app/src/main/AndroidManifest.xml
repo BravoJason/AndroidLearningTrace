@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="false"
@@ -14,6 +16,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".view.activity.actionBar.Part29TextReceiverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".view.activity.actionBar.Part29PhoneListenerReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
         <activity android:name=".view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -158,7 +179,13 @@
         <activity
             android:name=".view.activity.broadcast.Part27AlarmActivity"
             android:theme="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar" />
-        <activity android:name=".view.activity.fragment.Part28FragmentActivity"></activity>
+        <activity android:name=".view.activity.fragment.Part28FragmentActivity" />
+        <activity
+            android:name=".view.activity.actionBar.Part29ActionBarActivity"
+            android:parentActivityName=".view.activity.MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+
+        </activity>
     </application>
 
 </manifest>

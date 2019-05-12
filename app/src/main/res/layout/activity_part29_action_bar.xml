@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.actionBar.Part29ActionBarActivity">
+
+    <TextView
+        android:id="@+id/tv_p29_phone_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone state:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_p29_share_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ShareTextClick"
+        android:text="Share text message."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_p29_phone_state" />
+
+    <Button
+        android:id="@+id/btn_p29_share_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ShareImageClick"
+        android:text="Share image."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_p29_share_text" />
+
+    <Button
+        android:id="@+id/btn_p29_share_multi_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ShareMultipleImageClick"
+        android:text="Share multiple images."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_p29_share_image" />
+
+
+</android.support.constraint.ConstraintLayout>

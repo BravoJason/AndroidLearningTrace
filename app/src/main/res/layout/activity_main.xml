@@ -215,7 +215,13 @@
             android:id="@+id/btn_main_showPart28_fragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Part27 Fragment" />
+            android:text="Part28 Fragment" />
+
+        <Button
+            android:id="@+id/btn_main_showPart29_actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part29 ActionBar" />
 
 
     </LinearLayout>
