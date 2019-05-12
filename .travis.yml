@@ -6,7 +6,7 @@ env:
   global:
     - ANDROID_API_LEVEL=28
     - ANDROID_BUILD_TOOLS_VERSION=28.0.3
-  - ANDROID_ABI=armeabi-v7a
+    - ANDROID_ABI=armeabi-v7a
 
 android:
   components:
@@ -15,7 +15,7 @@ android:
     - android-$ANDROID_API_LEVEL
     - extra-android-m2repository
   licenses:
-    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-preview-license-52d11cd2'
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
 
@@ -28,9 +28,9 @@ before_cache:
 
 cache:
   directories:
-  - $HOME/.gradle/caches/
-  - $HOME/.gradle/wrapper/
-  - $HOME/.android/build-cache
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.android/build-cache
 
 before_script:
   - yes | sdkmanager "platforms;android-28"
