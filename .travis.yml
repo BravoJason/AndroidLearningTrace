@@ -15,6 +15,7 @@ android:
     - android-$ANDROID_API_LEVEL
     - extra-android-m2repository
   licenses:
+    - 'android-sdk-preview-license-.+'
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
 
