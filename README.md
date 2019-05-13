@@ -40,3 +40,4 @@ This is a repository for logging the trace of learning the Android development.
 35. Share text and image
 36. Share Action Provider
 37. Handler and SplashPage
+38. AsyncTask
