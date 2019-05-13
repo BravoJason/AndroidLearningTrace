@@ -16,10 +16,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.handler.Part30SplashActivity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+        <activity android:name=".view.activity.handler.Part30HandlerActivity" />
         <activity android:name=".view.activity.actionBar.Part29TextReceiverActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
@@ -183,9 +189,7 @@
         <activity
             android:name=".view.activity.actionBar.Part29ActionBarActivity"
             android:parentActivityName=".view.activity.MainActivity"
-            android:uiOptions="splitActionBarWhenNarrow">
-
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow" />
     </application>
 
 </manifest>
