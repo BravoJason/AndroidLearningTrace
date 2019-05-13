@@ -6,6 +6,8 @@ import android.learning.trace.android_learning_trace.R;
 import android.learning.trace.android_learning_trace.view.activity.actionBar.Part29ActionBarActivity;
 import android.learning.trace.android_learning_trace.view.activity.broadcast.Part27BroadcastActivity;
 import android.learning.trace.android_learning_trace.view.activity.fragment.Part28FragmentActivity;
+import android.learning.trace.android_learning_trace.view.activity.handler.Part30HandlerActivity;
+import android.learning.trace.android_learning_trace.view.activity.handler.Part30SplashActivity;
 import android.learning.trace.android_learning_trace.view.activity.intent.Part25IntentActivity;
 import android.learning.trace.android_learning_trace.view.activity.service.Part26ServiceActivity;
 import android.learning.trace.android_learning_trace.view.activity.ui.BasicUIComponentP3Activity;
@@ -89,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart27Broadcast = findViewById(R.id.btn_main_showPart27_broadcast);
         Button btnShowPart28Fragment = findViewById(R.id.btn_main_showPart28_fragment);
         Button btnShowPart29ActionBar = findViewById(R.id.btn_main_showPart29_actionbar);
+        Button btnShowPart30Handler = findViewById(R.id.btn_main_showPart30_handler);
+        Button btnShowPart30SplashPage = findViewById(R.id.btn_main_showPart30_splash_page);
 
 
         //Init Basic UI activity intent.
@@ -121,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
         Intent p27Intent = new Intent(this, Part27BroadcastActivity.class);
         Intent p28Intent = new Intent(this, Part28FragmentActivity.class);
         Intent p29Intent = new Intent(this, Part29ActionBarActivity.class);
+        Intent p30HandlerIntent = new Intent(this, Part30HandlerActivity.class);
+        Intent p30SplashPageIntent = new Intent(this, Part30SplashActivity.class);
 
         //Set button onClick callback listener.
         btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
@@ -152,6 +158,8 @@ public class MainActivity extends AppCompatActivity {
         btnShowPart27Broadcast.setOnClickListener(v -> startActivity(p27Intent));
         btnShowPart28Fragment.setOnClickListener(v -> startActivity(p28Intent));
         btnShowPart29ActionBar.setOnClickListener(v -> startActivity(p29Intent));
+        btnShowPart30Handler.setOnClickListener(view -> startActivity(p30HandlerIntent));
+        btnShowPart30SplashPage.setOnClickListener(view -> startActivity(p30SplashPageIntent));
 
     }
 }
