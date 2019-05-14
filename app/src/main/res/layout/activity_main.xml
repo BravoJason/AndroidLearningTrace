@@ -241,6 +241,12 @@
             android:layout_height="wrap_content"
             android:text="Part31 AsyncTask" />
 
+        <Button
+            android:id="@+id/btn_main_showPart32_file_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part32 File manage" />
+
 
     </LinearLayout>
 

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.filemanage.Part32FileManageActivity">
+
+    <Button
+        android:id="@+id/btn_part32_write_private_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="writePrivateFileClick"
+        android:text="Write private file"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_part32_read_private_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="readPrivateFileClick"
+        android:text="Read private file"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part32_write_private_file" />
+
+    <Button
+        android:id="@+id/btn_part32_read_raw_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="readRawFileClick"
+        android:text="Read raw file"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part32_read_private_file" />
+
+
+    <Button
+        android:id="@+id/btn_part32_write_private_cache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="writeCacheFileClick"
+        android:text="Write private cache file"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part32_read_raw_file" />
+
+    <Button
+        android:id="@+id/btn_part32_check_external_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkExternalStorageClick"
+        android:text="Check SD card Exist."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part32_write_private_cache" />
+
+    <Button
+        android:id="@+id/btn_part32_check_sd_read_only"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkSDCardReadOnlyClick"
+        android:text="Check SD card read-only mode."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part32_check_external_storage" />
+
+    <Button
+        android:id="@+id/btn_part32_save_private_file_external"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="writePrivateFileExternalClick"
+        android:text="External Private File Test"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part32_check_sd_read_only" />
+
+    <Button
+        android:id="@+id/btn_part32_save_private_cache_file_external"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="writePrivateCacheFileExternalClick"
+        android:text="External Private Cache File Test"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part32_save_private_file_external" />
+
+
+</android.support.constraint.ConstraintLayout>
