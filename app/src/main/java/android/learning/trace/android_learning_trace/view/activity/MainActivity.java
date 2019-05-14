@@ -4,7 +4,9 @@ package android.learning.trace.android_learning_trace.view.activity;
 import android.content.Intent;
 import android.learning.trace.android_learning_trace.R;
 import android.learning.trace.android_learning_trace.view.activity.actionBar.Part29ActionBarActivity;
+import android.learning.trace.android_learning_trace.view.activity.asynctask.Part31AsyncTaskActivity;
 import android.learning.trace.android_learning_trace.view.activity.broadcast.Part27BroadcastActivity;
+import android.learning.trace.android_learning_trace.view.activity.filemanage.Part32FileManageActivity;
 import android.learning.trace.android_learning_trace.view.activity.fragment.Part28FragmentActivity;
 import android.learning.trace.android_learning_trace.view.activity.handler.Part30HandlerActivity;
 import android.learning.trace.android_learning_trace.view.activity.handler.Part30SplashActivity;
@@ -93,6 +95,9 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart29ActionBar = findViewById(R.id.btn_main_showPart29_actionbar);
         Button btnShowPart30Handler = findViewById(R.id.btn_main_showPart30_handler);
         Button btnShowPart30SplashPage = findViewById(R.id.btn_main_showPart30_splash_page);
+        Button btnShowPart31AsyncTask = findViewById(R.id.btn_main_showPart31_async_task);
+        Button btnShowPart32FileManage = findViewById(R.id.btn_main_showPart32_file_manage);
+
 
 
         //Init Basic UI activity intent.
@@ -127,6 +132,8 @@ public class MainActivity extends AppCompatActivity {
         Intent p29Intent = new Intent(this, Part29ActionBarActivity.class);
         Intent p30HandlerIntent = new Intent(this, Part30HandlerActivity.class);
         Intent p30SplashPageIntent = new Intent(this, Part30SplashActivity.class);
+        Intent p31AsyncTaskIntent = new Intent(this, Part31AsyncTaskActivity.class);
+        Intent p32FileManageIntent = new Intent(this, Part32FileManageActivity.class);
 
         //Set button onClick callback listener.
         btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
@@ -160,6 +167,8 @@ public class MainActivity extends AppCompatActivity {
         btnShowPart29ActionBar.setOnClickListener(v -> startActivity(p29Intent));
         btnShowPart30Handler.setOnClickListener(view -> startActivity(p30HandlerIntent));
         btnShowPart30SplashPage.setOnClickListener(view -> startActivity(p30SplashPageIntent));
+        btnShowPart31AsyncTask.setOnClickListener(v -> startActivity(p31AsyncTaskIntent));
+        btnShowPart32FileManage.setOnClickListener(v -> startActivity(p32FileManageIntent));
 
     }
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.asynctask.Part31AsyncTaskActivity">
+
+    <Button
+        android:id="@+id/btn_part31_async"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="StartAsyncClick"
+        android:text="Async"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_part31_async_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part31_async" />
+
+    <Button
+        android:id="@+id/btn_part31_async_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="AsyncDownloadClick"
+        android:text="Async download"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_part31_async_result" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_part31_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part31_async_download" />
+
+    <TextView
+        android:id="@+id/tv_part31_download_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressbar_part31_download" />
+</android.support.constraint.ConstraintLayout>
