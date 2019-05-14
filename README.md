@@ -42,3 +42,4 @@ This is a repository for logging the trace of learning the Android development.
 37. Handler and SplashPage
 38. AsyncTask
 39. File management
+40. XML(Pull Parse)
