@@ -247,6 +247,12 @@
             android:layout_height="wrap_content"
             android:text="Part32 File manage" />
 
+        <Button
+            android:id="@+id/btn_main_showPart33_XML"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part33 XML" />
+
 
     </LinearLayout>
 
