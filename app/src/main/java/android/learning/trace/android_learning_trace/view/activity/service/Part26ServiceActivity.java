@@ -37,14 +37,14 @@ import android.widget.Toast;
  * 1. Client user bindService() to bind a service object.
  * If bind successfully, it will callback the onServiceConnected() in serviceConnection interface.
  * 2. Use Service compound to expose the biz interface.
- * 3. Service side use create a *.aidl file to define an interface which can be called by the client side.
+ * 3. Service side use create a *.aidl jsonfile to define an interface which can be called by the client side.
  * AIDL:
  * Can not have the access modifier.Like an interface syntax.
  * Support type: 8 basic data type. String, CharSequence, List<String>, Map, Customized type.
  *      Customized type:
  *          1. Implement the parcelable interface.
- *          2. Create an AIDL file to declare the type.
- *          3. Import it into other AIDL file and then use it.
+ *          2. Create an AIDL jsonfile to declare the type.
+ *          3. Import it into other AIDL jsonfile and then use it.
  * 4. Server side need to provide an implement of the biz interface. Usually, extend the Stub class.
  * 5. Use onBind() in Service to return the bound biz object.
  * 6. If the client side binds successfully, the client side can call the functions like call the local functions as well.

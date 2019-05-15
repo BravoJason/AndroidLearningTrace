@@ -31,8 +31,8 @@ public class Part32FileManageActivity extends AppCompatActivity {
 
 
     /**
-     * Read private file.
-     * The private file path is /data/data/package.name/file/filename.
+     * Read private jsonfile.
+     * The private jsonfile path is /data/data/package.name/jsonfile/filename.
      *
      * @param view
      */
@@ -41,7 +41,7 @@ public class Part32FileManageActivity extends AppCompatActivity {
 
         try {
             out = openFileOutput("PrivateFile.txt", Context.MODE_APPEND);
-            String info = "Private file write test. ";
+            String info = "Private jsonfile write test. ";
             byte[] bytes = info.getBytes();
             out.write(bytes, 0, bytes.length);
         } catch (FileNotFoundException e) {
@@ -60,8 +60,8 @@ public class Part32FileManageActivity extends AppCompatActivity {
     }
 
     /**
-     * Read private file.
-     * The private file path is /data/data/package.name/file/filename
+     * Read private jsonfile.
+     * The private jsonfile path is /data/data/package.name/jsonfile/filename
      *
      * @param view
      */
@@ -97,7 +97,7 @@ public class Part32FileManageActivity extends AppCompatActivity {
     }
 
     /**
-     * Read raw file from resource.
+     * Read raw jsonfile from resource.
      *
      * @param view
      */
@@ -130,7 +130,7 @@ public class Part32FileManageActivity extends AppCompatActivity {
 
 
     /**
-     * Write file into private cache.
+     * Write jsonfile into private cache.
      * Path:/data/data/<package name>/cache
      *
      * @param view
@@ -146,7 +146,7 @@ public class Part32FileManageActivity extends AppCompatActivity {
             File temp = File.createTempFile(fileName, null, getCacheDir());
             out = new FileOutputStream(temp);
             PrintStream ps = new PrintStream(out);
-            ps.print("Cache file test.");
+            ps.print("Cache jsonfile test.");
             ps.flush();
         } catch (IOException e) {
             e.printStackTrace();
@@ -214,7 +214,7 @@ public class Part32FileManageActivity extends AppCompatActivity {
             try {
                 outputStream = new FileOutputStream(externalFile + "/external_private_file.txt");
                 PrintStream ps = new PrintStream(outputStream);
-                ps.println("This is the external private file test.");
+                ps.println("This is the external private jsonfile test.");
                 ps.flush();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -244,7 +244,7 @@ public class Part32FileManageActivity extends AppCompatActivity {
 
                 outputStream = new FileOutputStream(externalPrivateCacheFile);
                 PrintStream ps = new PrintStream(outputStream);
-                ps.println("This is the external private cache file test.");
+                ps.println("This is the external private cache jsonfile test.");
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

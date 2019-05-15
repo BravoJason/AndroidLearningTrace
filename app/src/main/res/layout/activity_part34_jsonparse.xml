@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.JSON.Part34JSONParseActivity">
+
+    <Button
+        android:id="@+id/btn_part34_parse_json"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ParseJSONClick"
+        android:text="Parse JSON"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_part34_create_json"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="CreateJSONClick"
+        android:text="Create JSON"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part34_parse_json" />
+
+    <Button
+        android:id="@+id/btn_part34_parse_json_gson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ParseJSONWithGSONClick"
+        android:text="Parse JSON with GSON"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part34_create_json" />
+
+    <Button
+        android:id="@+id/btn_part34_create_json_gson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="CreateJSONWithGSONClick"
+        android:text="Create JSON with GSON"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part34_parse_json_gson" />
+
+</android.support.constraint.ConstraintLayout>

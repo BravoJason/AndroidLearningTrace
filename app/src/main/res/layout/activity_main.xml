@@ -253,6 +253,12 @@
             android:layout_height="wrap_content"
             android:text="Part33 XML" />
 
+        <Button
+            android:id="@+id/btn_main_showPart34_JSON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part34 JSON" />
+
 
     </LinearLayout>
 

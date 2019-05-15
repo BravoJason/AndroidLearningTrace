@@ -19,8 +19,8 @@ public class part22CustomizedView extends View {
 
     /**
      * Constructor that is called when inflating a view from XML. This is called
-     * when a view is being constructed from an XML file, supplying attributes
-     * that were specified in the XML file. This version uses a default style of
+     * when a view is being constructed from an XML jsonfile, supplying attributes
+     * that were specified in the XML jsonfile. This version uses a default style of
      * 0, so the only attribute values applied are those in the Context's Theme
      * and the given AttributeSet.
      * <p>

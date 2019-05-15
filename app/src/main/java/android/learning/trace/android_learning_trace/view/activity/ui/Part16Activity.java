@@ -100,7 +100,7 @@ public class Part16Activity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        //Set menu by layout file.
+        //Set menu by layout jsonfile.
         //Get menu inflater.
         getMenuInflater().inflate(R.menu.menu_part16, menu);
 
