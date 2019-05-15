@@ -40,7 +40,7 @@ public class Friend implements Parcelable {
     /**
      * Describe the kinds of special objects contained in this Parcelable
      * instance's marshaled representation. For example, if the object will
-     * include a file descriptor in the output of {@link #writeToParcel(Parcel, int)},
+     * include a jsonfile descriptor in the output of {@link #writeToParcel(Parcel, int)},
      * the return value of this method must include the
      * {@link #CONTENTS_FILE_DESCRIPTOR} bit.
      *

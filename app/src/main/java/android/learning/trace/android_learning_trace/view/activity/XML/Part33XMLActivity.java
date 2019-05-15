@@ -40,7 +40,7 @@ public class Part33XMLActivity extends AppCompatActivity {
 
         //Create a PULL parese.
         XmlPullParser pullParser = Xml.newPullParser();
-        InputStream in = getResources().openRawResource(R.raw.file);
+        InputStream in = getResources().openRawResource(R.raw.jsonfile);
         try {
             //Set the parse input stream.
             pullParser.setInput(in, "UTF-8");
