@@ -4,6 +4,7 @@ package android.learning.trace.android_learning_trace.view.activity;
 import android.content.Intent;
 import android.learning.trace.android_learning_trace.R;
 import android.learning.trace.android_learning_trace.view.activity.JSON.Part34JSONParseActivity;
+import android.learning.trace.android_learning_trace.view.activity.SQLite.Part35SQLiteActivity;
 import android.learning.trace.android_learning_trace.view.activity.XML.Part33XMLActivity;
 import android.learning.trace.android_learning_trace.view.activity.actionBar.Part29ActionBarActivity;
 import android.learning.trace.android_learning_trace.view.activity.asynctask.Part31AsyncTaskActivity;
@@ -101,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowPart32FileManage = findViewById(R.id.btn_main_showPart32_file_manage);
         Button btnShowPart33XML = findViewById(R.id.btn_main_showPart33_XML);
         Button btnShowPart34JSON = findViewById(R.id.btn_main_showPart34_JSON);
+        Button btnShowPart35SQLite = findViewById(R.id.btn_main_showPart35_SQLite);
 
 
 
@@ -140,6 +142,8 @@ public class MainActivity extends AppCompatActivity {
         Intent p32FileManageIntent = new Intent(this, Part32FileManageActivity.class);
         Intent p33XMLIntent = new Intent(this, Part33XMLActivity.class);
         Intent p34JSONIntent = new Intent(this, Part34JSONParseActivity.class);
+        Intent p35SQLiteIntent = new Intent(this, Part35SQLiteActivity.class);
+
 
         //Set button onClick callback listener.
         btnShowBasicUIP1Activity.setOnClickListener(v -> startActivity(basicUIP1Intent));
@@ -177,6 +181,7 @@ public class MainActivity extends AppCompatActivity {
         btnShowPart32FileManage.setOnClickListener(v -> startActivity(p32FileManageIntent));
         btnShowPart33XML.setOnClickListener(v -> startActivity(p33XMLIntent));
         btnShowPart34JSON.setOnClickListener(v -> startActivity(p34JSONIntent));
+        btnShowPart35SQLite.setOnClickListener(v -> startActivity(p35SQLiteIntent));
 
     }
 }

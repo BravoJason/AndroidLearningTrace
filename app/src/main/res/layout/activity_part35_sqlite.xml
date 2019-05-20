@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.SQLite.Part35SQLiteActivity">
+
+
+    <Button
+        android:id="@+id/btn_part35_add_dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addDogTableClick"
+        android:text="Add a Dog into Dog table"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_part35_delete_dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteDogTableClick"
+        android:text="Delete the Dog from table"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part35_add_dog" />
+
+    <Button
+        android:id="@+id/btn_part35_update_dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateDogTableClick"
+        android:text="Update a dog from table"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part35_delete_dog" />
+
+    <Button
+        android:id="@+id/btn_part35_find_dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="findDogTableClick"
+        android:text="Find the dog from database."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part35_update_dog" />
+
+    <Button
+        android:id="@+id/btn_part35_add_dog_SQL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addDogSQLClick"
+        android:text="Add a dog by SQL statement"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part35_find_dog" />
+
+    <Button
+        android:id="@+id/btn_part35_find_dog_SQL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="findDogSQLClick"
+        android:text="Find a dog by SQL statement"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part35_add_dog_SQL" />
+
+    <Button
+        android:id="@+id/btn_part35_add_dog_transection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addDogsSQLClick"
+        android:text="Add two dogs in transection"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_part35_find_dog_SQL" />
+
+</android.support.constraint.ConstraintLayout>
